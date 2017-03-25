@@ -1,2 +1,5 @@
 .DS_STORE
 .vagrant
+
+/public/vendor/
+/public/plugins/istheweb/shop/vendor/
