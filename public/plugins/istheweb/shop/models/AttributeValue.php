@@ -59,24 +59,26 @@ class AttributeValue extends Model
     public function beforeSave()
     {
 
-        $attr = Attribute::find(post('attributes'));
+        if(count(post()) > 0){
+            $attr = Attribute::find(post('attributes'));
 
-        if($attr->type == 'checkbox') $type = 'boolean_value';
-        else $type = $attr->type."_value";
+            if($attr->type == 'checkbox') $type = 'boolean_value';
+            else $type = $attr->type."_value";
 
-        if($this->attribute && $this->attribute->id != $attr->id) {
+            if($this->attribute && $this->attribute->id != $attr->id) {
 
-            if($this->attribute->type == 'checkbox') $old_type = 'boolean_value';
-            else $old_type = $this->attribute->type."_value";
-            $this->{$old_type} = null;
-        }
-        $this->attribute = $attr;
-        if(isset($this->attributes['model'])){
+                if($this->attribute->type == 'checkbox') $old_type = 'boolean_value';
+                else $old_type = $this->attribute->type."_value";
+                $this->{$old_type} = null;
+            }
+            $this->attribute = $attr;
+            if(isset($this->attributes['model'])){
 
-            $model = $this->attributes['model'];
-            if($model == 'on') $this->{$type} = 1;
-            else $this->{$type} = $model;
-            array_forget($this->attributes, 'model');
+                $model = $this->attributes['model'];
+                if($model == 'on') $this->{$type} = 1;
+                else $this->{$type} = $model;
+                array_forget($this->attributes, 'model');
+            }
         }
     }
 

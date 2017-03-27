@@ -21,6 +21,11 @@ class CreateOrdersTable extends Migration
             $table->decimal('shipping', 15, 2)->nullable();
             $table->decimal('subtotal', 15, 2)->nullable();
             $table->decimal('total', 15, 2)->nullable();
+            $table->integer('adjustments_total')->nullable();
+            $table->string('state', 255)->nullable();
+            $table->string('checkout_state', 255)->nullable();
+            $table->string('payment_state', 255)->nullable();
+            $table->string('shipping_state', 255)->nullable();
             $table->string('currency_code', 3)->nullable();
             $table->string('locale_code', 255)->nullable();
             $table->string('customer_ip', 255)->nullable();

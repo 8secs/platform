@@ -14,5 +14,17 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/public/plugins/october/drivers/vendor/iron-io/iron_mq/iron_mq.phar/" />
+          <root url="phar://$MODULE_DIR$/public/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/public/plugins/october/drivers/vendor/iron-io/iron_mq/iron_mq.phar/" />
+          <root url="phar://$MODULE_DIR$/public/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

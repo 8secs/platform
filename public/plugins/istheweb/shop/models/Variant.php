@@ -61,22 +61,27 @@ class Variant extends Base implements StockableInterface
 
     public function beforeSave()
     {
-        $manage_id = post('manage_id');
-        if(!isset($manage_id)){
-            $path = explode('/', Request::path());
-            $id = last($path);
-            $product = Product::find($id);
-            $this->product = $product;
-            $name = $product->name;
-            $variant = post('Variant');
-            $options = $variant['optionsValues'];
-            if(!is_null($options)){
-                foreach ($options as $k => $v){
-                    $ov = OptionValue::find($v);
-                    $name .= ' - ' . $ov->value;
-                    $this->optionsValues()->add($ov);
+        if(count(post()) > 0){
+            $manage_id = post('manage_id');
+            if(!isset($manage_id)){
+                $path = explode('/', Request::path());
+                $id = last($path);
+                if(!is_null($id)){
+                    $product = Product::find($id);
+                    $this->product = $product;
+                    $name = $product->name;
                 }
-                $this->name = $name;
+
+                $variant = post('Variant');
+                $options = $variant['optionsValues'];
+                if(!is_null($options)){
+                    foreach ($options as $k => $v){
+                        $ov = OptionValue::find($v);
+                        $name .= ' - ' . $ov->value;
+                        $this->optionsValues()->add($ov);
+                    }
+                    $this->name = $name;
+                }
             }
         }
     }

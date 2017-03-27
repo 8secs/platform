@@ -18,6 +18,7 @@ class CreateOrderItemsTable extends Migration
             $table->decimal('unit_price', 13, 2);
             $table->decimal('unit_total', 13, 2);
             $table->decimal('total', 13, 2);
+            $table->integer('adjustments_total')->nullable();
             $table->timestamps();
         });
     }

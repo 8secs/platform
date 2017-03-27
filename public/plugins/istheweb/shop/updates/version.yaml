@@ -10,26 +10,17 @@
   - create_shipping_methods_table.php
   - create_addresses_table.php
   - create_customers_table.php
-1.0.3:
-  - Other tables
   - create_attribute_values_table.php
   - create_attributes_table.php
   - create_option_values_table.php
   - create_options_table.php
   - create_products_table.php
   - create_variants_table.php
-  - create_pivots_table.php
-1.0.4:
-  - Add Order tables to shop system
-  - create_orders_table.php
   - create_order_statuses_table.php
+  - create_orders_table.php
   - create_order_items_table.php
-  - seed_order_statuses_table.php
-1.0.5:
-  - Sedd locations tables
+  - create_pivots_table.php
   - seed_tables.php
-1.0.6:
-  - Add Adjustments to Order and Order Items
-  - create_adjustments_table.php
-  - update_order_item_with_adjustment.php
-  - update_order_with_adjustments.php
+  - seed_spain_states_table.php
+  - seed_order_statuses_table.php
+
