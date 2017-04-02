@@ -1,6 +1,8 @@
 .DS_STORE
 .vagrant
 
+.idea
+
 /public/vendor/
 /public/plugins/istheweb/shop/vendor/
 /public/plugins/istheweb/ispdf/vendor/
