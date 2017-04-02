@@ -55,6 +55,7 @@ return [
         'weight'                        => 'Weight',
         'taxes'                         => 'Taxes',
         'inventory'                     => 'Inventory',
+        'shipment'                      => 'Shipment',
         'on_hand'                       => 'Current stock',
         'tracked'                       => 'Tracked',
         'caption'                       => 'Caption',
@@ -134,6 +135,7 @@ return [
         'height'                        => 'Height',
         'depth'                         => 'Depth',
         'weight'                        => 'Weight',
+        'volume'                        => 'Volume',
         'properties'                    => 'Properties',
     ],
     'labels'       => [

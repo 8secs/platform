@@ -13,6 +13,7 @@ class TaxRate extends Base
 
     const PERCENTAGE_TYPE = 'P';
     const FIXED_TYPE = 'F';
+    const TAX_TYPE = 'tax';
 
     /**
      * @var string The database table used by the model.
@@ -40,7 +41,7 @@ class TaxRate extends Base
     ];
 
     public function scopeRate($query, $tax_category_id){
-        $query->select(['rate', 'type'])->where('tax_category_id', '=', $tax_category_id);
+        $query->select(['rate', 'type', 'name'])->where('tax_category_id', '=', $tax_category_id);
     }
 
     public function isIncludedInPrice(){
@@ -56,10 +57,14 @@ class TaxRate extends Base
     public function calculate($base)
     {
         if ($this->isIncludedInPrice()) {
-            return (int) round($base - ($base / (1 + $this->rate)));
+            return number_format($base - ($base / (1 + $this->rate)), 2);
         }
 
-        return $this->type == TaxRate::FIXED_TYPE ? $this->rate : (int) round($base * $this->rate / 100);
+        $rate = $this->type == TaxRate::FIXED_TYPE ? number_format($this->rate, 2) :  number_format($base * $this->rate / 100, 2);
+        $rates = explode('.', $rate);
+        $rate = $rates[0].''.$rates[1];
+
+        return $rate;
     }
 
 }

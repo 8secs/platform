@@ -19,7 +19,7 @@
                         <button
                             class="btn btn-primary"
                             data-request="<?= $this->getEventHandler('onSaveUser') ?>"
-                            data-request-success="closeModal()">create </button>
+                            data-request-success="$('#<?= $this->getId('popup') ?>').modal('hide');">create </button>
                         <button
                                 type="button"
                                 class="btn btn-default"
@@ -36,6 +36,7 @@
 
 <script>
     function closeModal() {
+        console.log("close");
         $('#<?= $this->getId('popup') ?>').modal('hide');
     }
 </script>

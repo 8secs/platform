@@ -2,7 +2,7 @@
 
 return [
     'plugin' => [
-        'name' => 'Dynamické PDF',
+        'name' => 'IsPDF',
         'description' => 'Generování dynamických a upravitelných PDF.',
     ],
     'templates' => [

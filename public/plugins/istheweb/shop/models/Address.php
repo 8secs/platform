@@ -75,7 +75,7 @@ class Address extends Base
         if($this->country){
             $data = State::where('country_id', '=', $this->country->id)->lists('name', 'id', 'code');
         }else{
-            $spain = Country::find(249);
+            $spain = Country::whereCode('es')->first();
             $data = State::where('country_id', '=', $spain->id)->lists('name', 'id', 'code');
         }
 

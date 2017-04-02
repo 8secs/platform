@@ -10,6 +10,8 @@ class ShippingMethod extends Base
 {
     use Validation;
 
+
+
     /**
      * @var string The database table used by the model.
      */

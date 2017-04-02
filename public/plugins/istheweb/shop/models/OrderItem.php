@@ -58,10 +58,14 @@ class OrderItem extends Model
     public function beforeSave()
     {
         $this->getTotalItem();
+
     }
 
     public function afterSave()
     {
+        $this->checkAdjustements();
         $this->order->updateTotals();
     }
+
+
 }

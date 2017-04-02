@@ -2,7 +2,7 @@
 
 return [
     'plugin' => [
-        'name' => 'DynamicPDF',
+        'name' => 'isPdf',
         'description' => 'Genera PDF dinámicos y personalizados.',
     ],
     'templates' => [

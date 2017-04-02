@@ -41,7 +41,7 @@ class Plugin extends PluginBase
     {
         return [
             'ispdf' => [
-                'label' => 'istheweb.ispdf::lang.menu.label',
+                'label' => 'istheweb.ispdf::lang.plugin.name',
                 'url' => Backend::url('istheweb/ispdf/templates'),
                 'icon' => 'icon-file-pdf-o',
                 'permissions' => ['istheweb.ispdf.*'],

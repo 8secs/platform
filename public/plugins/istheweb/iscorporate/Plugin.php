@@ -196,7 +196,7 @@ class Plugin extends PluginBase
                 'url'         => Backend::url('istheweb/iscorporate/'. $this->startPage('clients')),
                 'icon'        => 'icon-building',
                 'permissions' => ['istheweb.iscorporate.*'],
-                'order'       => 500,
+                'order'       => 410,
 
                 'sideMenu'    => [
                     'issues'        => [

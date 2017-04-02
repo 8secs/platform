@@ -26,6 +26,7 @@ class CreateProductsTable extends Migration
             $table->double('height')->nullable();
             $table->double('depth')->nullable();
             $table->double('weight')->nullable();
+            $table->double('volume')->nullable();
             $table->decimal('wholesaler_price', 13,2)->nullable();
             $table->decimal('price', 13,2)->nullable();
             $table->integer('on_hold')->default(0);

@@ -117,6 +117,11 @@ secondaryTabs:
         span: auto
         type: number
         tab: istheweb.shop::lang.sidebar.shippings
+    volume:
+        label: istheweb.shop::lang.fields.volume
+        span: auto
+        type: number
+        tab: istheweb.shop::lang.sidebar.shippings
     categories:
         label: istheweb.shop::lang.categories.menu_label
         type: partial

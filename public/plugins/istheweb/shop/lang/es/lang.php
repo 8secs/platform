@@ -55,6 +55,7 @@ return [
         'weight'                        => 'Peso',
         'taxes'                         => 'Impuestos',
         'inventory'                     => 'Inventario',
+        'shipment'                      => 'Transporte',
         'on_hand'                       => 'Existencia actual',
         'tracked'                       => 'Seguimiento de inventario',
         'caption'                       => 'Subtítulo',
@@ -133,6 +134,7 @@ return [
         'height'                        => 'Alto',
         'depth'                         => 'Profundidad',
         'weight'                        => 'Peso',
+        'volume'                        => 'Volumen',
         'properties'                    => 'Propiedades',
 
     ],

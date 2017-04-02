@@ -37,3 +37,11 @@ billing_address:
         list: $/istheweb/shop/models/address/columns.yaml
         showSearch: true
         scope: findByCustomer
+shipment:
+    label: istheweb.shop::lang.fields.shipment
+    view:
+        form: $/istheweb/shop/models/shipment/fields.yaml
+        toolbarButtons: update|delete
+    manage:
+        form: $/istheweb/shop/models/shipment/fields.yaml
+        list: $/istheweb/shop/models/shipment/columns.yaml

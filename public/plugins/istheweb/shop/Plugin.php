@@ -46,7 +46,7 @@ class Plugin extends PluginBase
                 'url'         => Backend::url('istheweb/shop/'. $this->startPage()),
                 'icon'        => 'icon-shopping-cart',
                 'permissions' => ['istheweb.shop.*'],
-                'order'       => 500,
+                'order'       => 450,
 
                 'sideMenu'    => [
 
@@ -387,8 +387,9 @@ class Plugin extends PluginBase
     public function evalProductableOrderItemListColumn($value, $column, $record)
     {
         $type = $record->productable_type;
-        $instance = $type::where('id', $value)->first();
 
+        $instance = $type::find($value);
+        //dd($column);
         return strtoupper($instance->name);
     }
 

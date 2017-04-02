@@ -23,6 +23,7 @@ return array(
     'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
     'Symfony\\Component\\Cache\\' => array($vendorDir . '/symfony/cache'),
     'Sylius\\Component\\Variation\\' => array($vendorDir . '/sylius/variation'),
+    'Sylius\\Component\\Shipping\\' => array($vendorDir . '/sylius/shipping'),
     'Sylius\\Component\\Resource\\' => array($vendorDir . '/sylius/resource'),
     'Sylius\\Component\\Registry\\' => array($vendorDir . '/sylius/registry'),
     'Sylius\\Component\\Product\\' => array($vendorDir . '/sylius/product'),

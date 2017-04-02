@@ -63,6 +63,16 @@ secondaryTabs:
           type: partial
           path: field_order_items
           tab: istheweb.shop::lang.tabs.order_details
+      shipment_section@update:
+          label: istheweb.shop::lang.fields.shipment
+          span: auto
+          type: section
+          context: update
+          tab: istheweb.shop::lang.tabs.order_details
+      shipment@update:
+          type: partial
+          path: field_shipment
+          tab: istheweb.shop::lang.tabs.order_details
       totales_section@update:
           label: istheweb.shop::lang.fields.totals
           type: section

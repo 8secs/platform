@@ -2690,5 +2690,72 @@
         ],
         "description": "Symfony ExpressionLanguage Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "sylius/shipping",
+        "version": "v0.19.0",
+        "version_normalized": "0.19.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Sylius/Shipping.git",
+            "reference": "93dbf08e5595f0c421a54787f4d00a966d6523f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Sylius/Shipping/zipball/93dbf08e5595f0c421a54787f4d00a966d6523f0",
+            "reference": "93dbf08e5595f0c421a54787f4d00a966d6523f0",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6|^7.0",
+            "sylius/registry": "^0.19",
+            "sylius/resource": "^0.19",
+            "symfony/options-resolver": "^2.8"
+        },
+        "require-dev": {
+            "phpspec/phpspec": "^2.4"
+        },
+        "time": "2016-06-21 22:01:13",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.19-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Sylius\\Component\\Shipping\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sylius project",
+                "homepage": "http://sylius.org"
+            },
+            {
+                "name": "Community contributions",
+                "homepage": "http://github.com/Sylius/Sylius/contributors"
+            },
+            {
+                "name": "Paweł Jędrzejewski",
+                "homepage": "http://pjedrzejewski.com"
+            }
+        ],
+        "description": "Flexible shipping component for PHP e-commerce projects.",
+        "homepage": "http://sylius.org",
+        "keywords": [
+            "delivery",
+            "ecommerce",
+            "shipments",
+            "shipping",
+            "shop",
+            "sylius",
+            "webshop"
+        ]
     }
 ]

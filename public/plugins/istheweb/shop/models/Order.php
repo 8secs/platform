@@ -40,6 +40,10 @@ class Order extends Model
      * @var array Relations
      */
 
+    public $hasOne = [
+       'shipment'      => 'Istheweb\Shop\Models\Shipment'
+    ];
+
     public $belongsTo = [
         'order_status'      => 'Istheweb\Shop\Models\OrderStatus',
         'customer'          => ['Istheweb\Shop\Models\Customer'],
@@ -49,7 +53,6 @@ class Order extends Model
 
     public $hasMany = [
         'order_items'           => [ 'Istheweb\Shop\Models\OrderItem'],
-        'adjustments'           => ['Istheweb\Shop\Models\Adjustment']
     ];
 
     public $morphMany = [

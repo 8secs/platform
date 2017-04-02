@@ -30,5 +30,24 @@ class Adjustment extends Model
         'orderable' => []
     ];
 
+    public function scopeFindByTaxOrderable($query, $orderable)
+    {
+        return $query->where("orderable_id", $orderable->id)
+            ->where('orderable_type', get_class($orderable))
+            ->where('type', TaxRate::TAX_TYPE);
+    }
 
+    public function scopeFindByShipping($query, $orderable)
+    {
+        return $query->where('orderable_id', $orderable->id)
+            ->where('type', Shipment::SHIPMENT_TYPE);
+    }
+
+    public function scopeSumAdjustment($query, $orderable, $type)
+    {
+        return $query->where("orderable_id", $orderable->id)
+            ->where('orderable_type', get_class($orderable))
+            ->where('type', $type)
+            ->sum('amount');
+    }
 }
