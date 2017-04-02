@@ -2,276 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf1ab3c-7566-49d2-a252-73e08bfb5c98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/classes/ShippableInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/orders/_field_shipment.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/cache/29/18/404.htm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/cache/35/45/footer.htm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/cache/41/28/default.htm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/cache/71/99/header.htm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/twig/19/191281e985434f9fa01b2de711c53c14f3882ecdb6cb737aac438109155263f2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/twig/54/5428052bc48fde9c8d5a8fdd525c7d093959885076f6728b27cb1cbcef628f3e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/twig/58/58bfe03f248ace016779996bc92162d1e0855e81c6d6fac9bdda19cec0f05c3c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/twig/71/71ddd572693e8540578f97892666f6b117549fa59243ad0936beed3dad3be311.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/9355d57b8bfbb82517a593007c4ae071af0ff4be" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/ServiceProvider.php" afterPath="$PROJECT_DIR$/public/modules/backend/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/assets/css/october.css" afterPath="$PROJECT_DIR$/public/modules/backend/assets/css/october.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/assets/js/backend.js" afterPath="$PROJECT_DIR$/public/modules/backend/assets/js/backend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/assets/js/october-min.js" afterPath="$PROJECT_DIR$/public/modules/backend/assets/js/october-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/assets/less/layout/outerlayout.less" afterPath="$PROJECT_DIR$/public/modules/backend/assets/less/layout/outerlayout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/FormController.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/FormController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/ImportExportController.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/ImportExportController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/ListController.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/ListController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/RelationController.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/RelationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/ReorderController.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/ReorderController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/behaviors/UserPreferencesModel.php" afterPath="$PROJECT_DIR$/public/modules/backend/behaviors/UserPreferencesModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/AuthManager.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/AuthManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/BackendController.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/BackendController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/FormField.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/FormField.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/ListColumn.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/ListColumn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/NavigationManager.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/NavigationManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/classes/WidgetManager.php" afterPath="$PROJECT_DIR$/public/modules/backend/classes/WidgetManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/CodeEditor.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/CodeEditor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/ColorPicker.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/ColorPicker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/DataTable.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/DataTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/DatePicker.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/DatePicker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/FileUpload.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/FileUpload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/MarkdownEditor.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/MarkdownEditor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/PermissionEditor.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/PermissionEditor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/RecordFinder.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/RecordFinder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/Relation.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/Relation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/Repeater.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/Repeater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/RichEditor.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/RichEditor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/TagList.php" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/TagList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/assets/js/recordfinder.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/assets/js/recordfinder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/partials/_recordfinder.htm" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/partials/_recordfinder.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/partials/_recordfinder_form.htm" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/partials/_recordfinder_form.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/assets/js/repeater.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/assets/js/repeater.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/partials/_repeater.htm" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/partials/_repeater.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/partials/_repeater_item.htm" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/repeater/partials/_repeater_item.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/css/richeditor.css" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/css/richeditor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/build-min.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/build-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/build.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/richeditor.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/js/richeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ar.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/bs.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/cs.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/da.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/de.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/en_ca.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/en_ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/en_gb.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/en_gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/es.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/et.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fa.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fi.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fr.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/he.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/hr.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/hu.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/id.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/it.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ja.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ko.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/me.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/me.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/nb.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/nl.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pl.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pt_br.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pt_br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pt_pt.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/pt_pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ro.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ru.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/sr.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/sv.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/th.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/tr.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ua.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/ua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/zh_cn.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/zh_cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/zh_tw.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/assets/vendor/froala/js/languages/zh_tw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/partials/_richeditor.htm" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/richeditor/partials/_richeditor.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/fr/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/fr/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/hu/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/hu/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/ru/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/ru/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/sv/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/sv/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/models/Preference.php" afterPath="$PROJECT_DIR$/public/modules/backend/models/Preference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/reportwidgets/Welcome.php" afterPath="$PROJECT_DIR$/public/modules/backend/reportwidgets/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/skins/Standard.php" afterPath="$PROJECT_DIR$/public/modules/backend/skins/Standard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/traits/FormModelSaver.php" afterPath="$PROJECT_DIR$/public/modules/backend/traits/FormModelSaver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Filter.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Form.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Lists.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Lists.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/ReportContainer.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/ReportContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Search.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Table.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/Toolbar.php" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/Toolbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_balloon-selector.htm" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_balloon-selector.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_checkbox.htm" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_checkbox.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_dropdown.htm" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_dropdown.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_radio.htm" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_radio.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/ServiceProvider.php" afterPath="$PROJECT_DIR$/public/modules/cms/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/CmsCompoundObject.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/CmsCompoundObject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/CmsController.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/CmsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/CmsObject.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/CmsObject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/CodeParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/CodeParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/ComponentHelpers.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/ComponentHelpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/ComponentManager.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/ComponentManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/MediaLibrary.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/MediaLibrary.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/MediaViewHelper.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/MediaViewHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/Router.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/Theme.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/Theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/classes/ThemeManager.php" afterPath="$PROJECT_DIR$/public/modules/cms/classes/ThemeManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/database/migrations/2016_10_01_000002_Db_Cms_Timestamp_Fix.php" afterPath="$PROJECT_DIR$/public/modules/cms/database/migrations/2016_10_01_000002_Db_Cms_Timestamp_Fix.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/Components.php" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/Components.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/MediaFinder.php" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/MediaFinder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/css/mediafinder.css" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/css/mediafinder.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/js/mediafinder.js" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/js/mediafinder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/less/mediafinder.base.less" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/assets/less/mediafinder.base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_file_single.htm" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_file_single.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_image_single.htm" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_image_single.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_mediafinder.htm" afterPath="$PROJECT_DIR$/public/modules/cms/formwidgets/mediafinder/partials/_mediafinder.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/lang/el/lang.php" afterPath="$PROJECT_DIR$/public/modules/cms/lang/el/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/modules/cms/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/lang/hu/lang.php" afterPath="$PROJECT_DIR$/public/modules/cms/lang/hu/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/lang/ru/lang.php" afterPath="$PROJECT_DIR$/public/modules/cms/lang/ru/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/models/MaintenanceSetting.php" afterPath="$PROJECT_DIR$/public/modules/cms/models/MaintenanceSetting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/reportwidgets/ActiveTheme.php" afterPath="$PROJECT_DIR$/public/modules/cms/reportwidgets/ActiveTheme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/reportwidgets/activetheme/partials/_widget.htm" afterPath="$PROJECT_DIR$/public/modules/cms/reportwidgets/activetheme/partials/_widget.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/ComponentTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/ComponentTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/ContentTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/ContentTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/DefaultTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/DefaultTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/FrameworkTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/FrameworkTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/PageTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/PageTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/PartialTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/PartialTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/PlaceholderTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/PlaceholderTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/PutTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/PutTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/ScriptsTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/ScriptsTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/twig/StylesTokenParser.php" afterPath="$PROJECT_DIR$/public/modules/cms/twig/StylesTokenParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/AssetList.php" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/AssetList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/MediaManager.php" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/MediaManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/mediamanager/assets/css/mediamanager.css" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/mediamanager/assets/css/mediamanager.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/mediamanager/assets/less/mediamanager.less" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/mediamanager/assets/less/mediamanager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/templatelist/partials/_items.htm" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/templatelist/partials/_items.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/widgets/templatelist/partials/_templates.htm" afterPath="$PROJECT_DIR$/public/modules/cms/widgets/templatelist/partials/_templates.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/ServiceProvider.php" afterPath="$PROJECT_DIR$/public/modules/system/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/js/framework.extras.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/js/framework.extras.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/js/framework.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/js/framework.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/js/lang/lang.fr.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/js/lang/lang.fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/js/lang/lang.ru.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/js/lang/lang.ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/js/input.preset.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/js/input.preset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/less/form.less" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/less/form.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/storm-min.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/storm-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/storm.css" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/storm.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/behaviors/SettingsModel.php" afterPath="$PROJECT_DIR$/public/modules/system/behaviors/SettingsModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/CombineAssets.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/CombineAssets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/ErrorHandler.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/ErrorHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/MarkupManager.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/MarkupManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/PluginBase.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/PluginBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/PluginManager.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/PluginManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/SettingsManager.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/SettingsManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberDown.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberDown.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberEnv.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberEnv.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberFresh.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberFresh.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberInstall.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberInstall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberMirror.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberMirror.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberUp.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberUpdate.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberUpdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/OctoberUtil.php" afterPath="$PROJECT_DIR$/public/modules/system/console/OctoberUtil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/PluginInstall.php" afterPath="$PROJECT_DIR$/public/modules/system/console/PluginInstall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/PluginRefresh.php" afterPath="$PROJECT_DIR$/public/modules/system/console/PluginRefresh.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/PluginRemove.php" afterPath="$PROJECT_DIR$/public/modules/system/console/PluginRemove.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/ThemeInstall.php" afterPath="$PROJECT_DIR$/public/modules/system/console/ThemeInstall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/ThemeList.php" afterPath="$PROJECT_DIR$/public/modules/system/console/ThemeList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/ThemeRemove.php" afterPath="$PROJECT_DIR$/public/modules/system/console/ThemeRemove.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/console/ThemeUse.php" afterPath="$PROJECT_DIR$/public/modules/system/console/ThemeUse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/controllers/Updates.php" afterPath="$PROJECT_DIR$/public/modules/system/controllers/Updates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/el/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/el/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/hu/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/hu/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/hu/validation.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/hu/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/ru/client.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/ru/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/ru/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/ru/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/models/EventLog.php" afterPath="$PROJECT_DIR$/public/modules/system/models/EventLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/models/File.php" afterPath="$PROJECT_DIR$/public/modules/system/models/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/models/MailTemplate.php" afterPath="$PROJECT_DIR$/public/modules/system/models/MailTemplate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/models/RequestLog.php" afterPath="$PROJECT_DIR$/public/modules/system/models/RequestLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/reportwidgets/Status.php" afterPath="$PROJECT_DIR$/public/modules/system/reportwidgets/Status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/routes.php" afterPath="$PROJECT_DIR$/public/modules/system/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/traits/AssetMaker.php" afterPath="$PROJECT_DIR$/public/modules/system/traits/AssetMaker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/traits/EventEmitter.php" afterPath="$PROJECT_DIR$/public/modules/system/traits/EventEmitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/iscorporate/Plugin.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/iscorporate/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/Plugin.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/cs/lang.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/cs/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/es-ar/lang.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/es-ar/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/Plugin.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/composer.json" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/composer.lock" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/orders/config_relation.yaml" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/orders/config_relation.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/formwidgets/userclient/partials/_usercreate_form.htm" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/formwidgets/userclient/partials/_usercreate_form.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/es/lang.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/es/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Address.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Product.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingMethod.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingMethod.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/product/fields.yaml" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/product/fields.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_products_table.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_products_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/version.yaml" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/version.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/Plugin.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/README.md" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/components/Post.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/components/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/components/posts/default.htm" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/components/posts/default.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/controllers/Posts.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/controllers/Posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/de/lang.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/de/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/en/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/hu/lang.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/hu/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/pt-br/lang.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/pt-br/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/tr/lang.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/lang/tr/lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/models/Category.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/models/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/models/Post.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/models/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/updates/version.yaml" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/updates/version.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/vendor/autoload.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/blog/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/blog/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/Plugin.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/classes/Menu.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/classes/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/classes/Router.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/classes/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/updates/version.yaml" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/updates/version.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/autoload.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/0c/b0/0cb04905781de3dbf2424ab012adf555" afterPath="$PROJECT_DIR$/public/storage/framework/cache/0c/b0/0cb04905781de3dbf2424ab012adf555" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/10/11/101117eeee6e0be3b733b91017dee347" afterPath="$PROJECT_DIR$/public/storage/framework/cache/10/11/101117eeee6e0be3b733b91017dee347" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" afterPath="$PROJECT_DIR$/public/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/1e/c5/1ec5f4318ce114f486444c38d6d5f5b4" afterPath="$PROJECT_DIR$/public/storage/framework/cache/1e/c5/1ec5f4318ce114f486444c38d6d5f5b4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/39/3e/393ed5257bf4db97a1042f2a7595ce14" afterPath="$PROJECT_DIR$/public/storage/framework/cache/39/3e/393ed5257bf4db97a1042f2a7595ce14" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" afterPath="$PROJECT_DIR$/public/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" afterPath="$PROJECT_DIR$/public/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" afterPath="$PROJECT_DIR$/public/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" afterPath="$PROJECT_DIR$/public/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/6f/62/6f62ddb592d31134e2836840a465439e" afterPath="$PROJECT_DIR$/public/storage/framework/cache/6f/62/6f62ddb592d31134e2836840a465439e" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/80/c8/80c84920dfcdae721f9325b8acb6bf64" afterPath="$PROJECT_DIR$/public/storage/framework/cache/80/c8/80c84920dfcdae721f9325b8acb6bf64" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/86/a0/86a0204a18fb344ac088ac716026a124" afterPath="$PROJECT_DIR$/public/storage/framework/cache/86/a0/86a0204a18fb344ac088ac716026a124" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/86/d9/86d9fa5d87c40083a4069c799742efb7" afterPath="$PROJECT_DIR$/public/storage/framework/cache/86/d9/86d9fa5d87c40083a4069c799742efb7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/8a/61/8a6171ed6388d2ad23b281f51588e5fa" afterPath="$PROJECT_DIR$/public/storage/framework/cache/8a/61/8a6171ed6388d2ad23b281f51588e5fa" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/91/aa/91aaeb3d3720451f3d8056ef80f92eff" afterPath="$PROJECT_DIR$/public/storage/framework/cache/91/aa/91aaeb3d3720451f3d8056ef80f92eff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/a1/f7/a1f74de7779d5838a058998a9dfe30db" afterPath="$PROJECT_DIR$/public/storage/framework/cache/a1/f7/a1f74de7779d5838a058998a9dfe30db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/ac/09/ac091a88a262919299bb4af7f5fa96ed" afterPath="$PROJECT_DIR$/public/storage/framework/cache/ac/09/ac091a88a262919299bb4af7f5fa96ed" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/b3/40/b3400be9590a4786d79a0a75a1cee05c" afterPath="$PROJECT_DIR$/public/storage/framework/cache/b3/40/b3400be9590a4786d79a0a75a1cee05c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/bf/31/bf3182f8adf620f9c104d22976e76afd" afterPath="$PROJECT_DIR$/public/storage/framework/cache/bf/31/bf3182f8adf620f9c104d22976e76afd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/c6/22/c622c9a2978a3032dc6132413e617630" afterPath="$PROJECT_DIR$/public/storage/framework/cache/c6/22/c622c9a2978a3032dc6132413e617630" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/d7/2d/d72d8bf3ba168108ab77ea2bf95e1555" afterPath="$PROJECT_DIR$/public/storage/framework/cache/d7/2d/d72d8bf3ba168108ab77ea2bf95e1555" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/logs/system.log" afterPath="$PROJECT_DIR$/public/storage/logs/system.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/b45f2367dc6605753f17cfe0cc21ba2b3d9217b8" afterPath="$PROJECT_DIR$/public/storage/framework/sessions/b45f2367dc6605753f17cfe0cc21ba2b3d9217b8" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -297,7 +31,7 @@
       <file leaf-file-name="OrderItem.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="1026">
               <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding />
             </state>
@@ -307,8 +41,8 @@
       <file leaf-file-name="OrderItemModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+            <state relative-caret-position="1314">
+              <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -317,7 +51,7 @@
       <file leaf-file-name="TaxRate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-368">
+            <state relative-caret-position="252">
               <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding />
             </state>
@@ -327,28 +61,28 @@
       <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="50" column="64" lean-forward="true" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+            <state relative-caret-position="882">
+              <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderModel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="97" column="53" lean-forward="true" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+            <state relative-caret-position="1674">
+              <caret line="104" column="28" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="104" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adjustment.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Adjustment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="48" column="60" lean-forward="false" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+            <state relative-caret-position="432">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -357,7 +91,7 @@
       <file leaf-file-name="Shipment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
+            <state relative-caret-position="756">
               <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
               <folding>
                 <element signature="e#39#87#0#PHP" expanded="true" />
@@ -371,26 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShippingMethod.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingMethod.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fields.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -438,7 +152,6 @@
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_order_items_table.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_portugal_states_table.php" />
         <option value="$PROJECT_DIR$/bbdd/istheweb_shop_attributes.sql" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/bbdd/istheweb_shop_pivots.sql" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/AttributeValue.php" />
@@ -481,8 +194,9 @@
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingMethod.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -519,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -532,216 +245,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shippingmethod" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="behaviors" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plataform" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="istheweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -844,25 +350,25 @@
       <workItem from="1491031553990" duration="10462000" />
       <workItem from="1491125928580" duration="10097000" />
       <workItem from="1491137474131" duration="1596000" />
-      <workItem from="1491152655698" duration="7968000" />
+      <workItem from="1491152655698" duration="8691000" />
+      <workItem from="1491161416525" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86698000" />
+    <option name="totallyTimeSpent" value="87478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23212379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16808964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17129135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19728601" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -872,6 +378,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -905,21 +412,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_order_items_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/InventoryModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1135,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1134">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="59" column="70" lean-forward="false" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,13 +690,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="1026">
           <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding />
         </state>
@@ -1228,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
+        <state relative-caret-position="756">
           <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
           <folding>
             <element signature="e#39#87#0#PHP" expanded="true" />
@@ -1236,33 +719,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="48" column="60" lean-forward="false" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="50" column="64" lean-forward="true" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+        <state relative-caret-position="882">
+          <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+        <state relative-caret-position="1314">
+          <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
+        <state relative-caret-position="252">
           <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
@@ -1270,8 +745,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="97" column="53" lean-forward="true" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+        <state relative-caret-position="1674">
+          <caret line="104" column="28" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="104" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="396">
+            <caret line="22" column="67" lean-forward="false" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
