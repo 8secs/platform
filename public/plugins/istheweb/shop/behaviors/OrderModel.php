@@ -24,6 +24,9 @@ class OrderModel extends ModelBehavior
         parent::__construct($model);
     }
 
+    /**
+     * @return mixed
+     */
     public function formatReference(){
         $shopSettings = ShopSettings::instance();
         $count = Order::all()->count();
@@ -37,20 +40,35 @@ class OrderModel extends ModelBehavior
         return $reference;
     }
 
+    /**
+     * @param $method
+     * @return string
+     */
     public function calculateShipment($method)
     {
         if($method->calculator == 'flat_rate'){
-            $amounts = explode($method->amount);
-            $amount = $amounts[0]."".$amounts[1];
-            return $amount;
-        }elseif($method == 'per_unit_rate'){
-            $amounts = explode($method->amount * $this->model->order_items->count());
-            $amount = $amounts[0]."".$amounts[1];
-            return $amount;
+            $amounts = explode('.',$method->amount);
+            if(count($amounts) == 2){
+                $amount = $amounts[0]."".$amounts[1];
+            }else{
+                $amount = $method->amount."00";
+            }
+
+        }elseif($method->calculator == 'per_unit_rate'){
+            $total = $method->amount * $this->model->order_items->count();
+            $amounts = explode( '.', $total);
+            if(count($amounts) == 2){
+                $amount = $amounts[0]."".$amounts[1];
+            }else{
+                $amount = $total."00";
+            }
         }
+        return $amount;
     }
 
-
+    /**
+     *
+     */
     public function updateTotals()
     {
         $base = 0;
@@ -64,11 +82,14 @@ class OrderModel extends ModelBehavior
         $taxes = Adjustment::sumAdjustment($this->model, TaxRate::TAX_TYPE);
         $shipping = Adjustment::sumAdjustment($this->model, Shipment::SHIPMENT_TYPE);
         $this->model->tax = number_format(($taxes/100), 2);
-        $this->model->shipping = number_format($shipping, 2);
+        $this->model->shipping = number_format($shipping/100, 2);
         $this->model->total = $this->model->subtotal + $this->model->tax + $this->model->shipping;
         $this->model->save();
     }
 
+    /**
+     * @param $adjustment
+     */
     public function addTaxAdjustment($adjustment)
     {
         $rate = $adjustment->amount;
@@ -83,6 +104,9 @@ class OrderModel extends ModelBehavior
         $tax_adjustement->save();
     }
 
+    /**
+     * @param $amount
+     */
     public function updateTaxAdjustment($amount){
         $adjustment = Adjustment::FindByTaxOrderable($this->model)->first();
         if($adjustment->exists){
@@ -91,9 +115,12 @@ class OrderModel extends ModelBehavior
         }
     }
 
+    /**
+     *
+     */
     public function addShipmentAdjustement()
     {
-        $method = ShippingMethod::find($this->model->shipment->shipping_method_id);
+        $method = self::getShippingMethod();
         $adjustment = new Adjustment();
         $adjustment->orderable_id = $this->model->id;
         $adjustment->orderable_type = get_class($this->model);
@@ -106,6 +133,22 @@ class OrderModel extends ModelBehavior
         self::updateTotals();
     }
 
+    /**
+     *
+     */
+    public function updateShipmentAdjustment()
+    {
+        $adjustment = Adjustment::findByShipping($this->model)->first();
+        $method = self::getShippingMethod();
+        $adjustment->amount = self::calculateShipment($method);
+        $adjustment->name = $method->name;
+        $adjustment->save();
+        self::updateTotals();
+    }
+
+    /**
+     * @return int
+     */
     public function calculateAdjustments()
     {
         $total = 0;
@@ -114,5 +157,13 @@ class OrderModel extends ModelBehavior
             $total += $adjustment->amount;
         }
         return $total;
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getShippingMethod()
+    {
+        return ShippingMethod::find($this->model->shipment->shipping_method_id);
     }
 }

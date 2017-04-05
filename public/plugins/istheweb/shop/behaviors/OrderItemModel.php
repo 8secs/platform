@@ -55,8 +55,6 @@ class OrderItemModel extends ModelBehavior
             }
         }
 
-        //dd(dump($item));
-
         $this->model->unit_price = $item->price;
         $this->model->unit_total = $item->price * $quantity;
         $this->model->total = $this->model->unit_total;
@@ -95,6 +93,7 @@ class OrderItemModel extends ModelBehavior
         $tax_adjustement->is_locked = false;
         $tax_adjustement->save();
         $this->model->order->addTaxAdjustment($tax_adjustement);
+        $this->model->order->updateTotals();
     }
 
     public function updateAdjustment($adjustment){
@@ -104,6 +103,7 @@ class OrderItemModel extends ModelBehavior
             $adjustment->amount = (int) $rate;
             $adjustment->save();
             $this->model->order->updateTaxAdjustment($adjustment->amount);
+            $this->model->order->updateTotals();
         }
     }
 }

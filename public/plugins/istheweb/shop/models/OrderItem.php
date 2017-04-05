@@ -64,7 +64,6 @@ class OrderItem extends Model
     public function afterSave()
     {
         $this->checkAdjustements();
-        $this->order->updateTotals();
     }
 
 

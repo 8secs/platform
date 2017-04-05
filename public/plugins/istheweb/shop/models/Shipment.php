@@ -12,15 +12,42 @@ class Shipment extends Model
 {
 
     // Shipment default states.
+    /**
+     *
+     */
     const STATE_CHECKOUT = 'checkout';
+    /**
+     *
+     */
     const STATE_ONHOLD = 'onhold';
+    /**
+     *
+     */
     const STATE_PENDING = 'pending';
+    /**
+     *
+     */
     const STATE_READY = 'ready';
+    /**
+     *
+     */
     const STATE_BACKORDERED = 'backordered';
+    /**
+     *
+     */
     const STATE_SHIPPED = 'shipped';
+    /**
+     *
+     */
     const STATE_RETURNED = 'returned';
+    /**
+     *
+     */
     const STATE_CANCELLED = 'cancelled';
 
+    /**
+     *
+     */
     const SHIPMENT_TYPE = 'shipment';
 
     /**
@@ -45,12 +72,19 @@ class Shipment extends Model
     public $hasMany = [
         'shipping_items' => 'Istheweb\Shop\Models\ShipmentItem',
     ];
+    /**
+     * @var array
+     */
     public $belongsTo = [
         'order'             => 'Istheweb\Shop\Models\Order',
         'shipping_method'   => 'Istheweb\Shop\Models\ShippingMethod',
     ];
 
 
+    /**
+     * @param ShipmentItem $unit
+     * @return mixed
+     */
     public function hasUnit(ShipmentItem $unit){
         return $this->shipping_items->contains($unit);
     }
@@ -63,40 +97,61 @@ class Shipment extends Model
         return null !== $this->tracking;
     }
 
+    /**
+     *
+     */
     public function beforeSave()
     {
 
     }
 
+    /**
+     *
+     */
     public function afterCreate()
     {
         self::createShipmentItems();
     }
 
+    /**
+     *
+     */
     public function afterUpdate()
     {
-        self::updateShipments();
+        self::updateShipmentItems();
     }
 
+    /**
+     *
+     */
     protected function createShipmentItems()
     {
         $products = self::getProductables($this->order);
         foreach($products as $id){
-            $item = new ShipmentItem();
-            $item->shipment = $this;
-            $item->shippable = Product::find($id);
-            $item->state = self::STATE_READY;
-            $item->save();
-            $this->shipping_items()->add($item);
+            self::addShippingItem($id);
         }
         $this->order->addShipmentAdjustement();
     }
 
-    protected function updateShipments()
+    /**
+     *
+     */
+    protected function updateShipmentItems()
     {
-        dd(dump($this));
+        $products = self::getProductables($this->order);
+        if(!$this->shipping_items->isEmpty()){
+            foreach($products as $id){
+                if(!$this->shipping_items->contains('shippable_id', $id)){
+                    self::addShippingItem($id);
+                }
+            }
+        }
+        $this->order->updateShipmentAdjustment();
     }
 
+    /**
+     * @return array
+     */
     public function getShippingMethodOptions()
     {
         if(!is_null($this->order)){
@@ -108,16 +163,22 @@ class Shipment extends Model
         }
     }
 
+    /**
+     * @return mixed
+     */
     public function calculateShipment()
     {
-        $method = ShippingMethod::find($this->shipping_method->id);
-        if($method->calculator == 'flat_rate'){
-            return $method->amount;
-        }elseif($method == 'per_unit_rate'){
-            return $method->amount * $this->order_items->count();
+        if($this->shipping_method->calculator == 'flat_rate'){
+            return $this->shipping_method->amount;
+        }elseif($this->shipping_method == 'per_unit_rate'){
+            return $this->shipping_method->amount * $this->shipping_items->count();
         }
     }
 
+    /**
+     * @param $order
+     * @return array
+     */
     protected function getMethods($order)
     {
         $products = self::getProductables($order);
@@ -129,6 +190,10 @@ class Shipment extends Model
         }
     }
 
+    /**
+     * @param $order
+     * @return array
+     */
     protected function getProductables($order)
     {
         $products = array();
@@ -145,5 +210,18 @@ class Shipment extends Model
             }
         }
         return $products;
+    }
+
+    /**
+     * @param $id
+     */
+    protected function addShippingItem($id)
+    {
+        $item = new ShipmentItem();
+        $item->shipment = $this;
+        $item->shippable = Product::find($id);
+        $item->state = self::STATE_READY;
+        $item->save();
+        $this->shipping_items()->add($item);
     }
 }

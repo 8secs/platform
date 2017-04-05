@@ -27,4 +27,9 @@ class ShipmentItem extends Model
     public $morphTo = [
         'shippable' => []
     ];
+
+    public function scopeShippable($query, $shippable_id)
+    {
+        return $query->where('shippable_id', $shippable_id);
+    }
 }
