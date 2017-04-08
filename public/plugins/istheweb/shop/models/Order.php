@@ -74,4 +74,9 @@ class Order extends Model
         $query->select('reference')->orderBy('id', 'desc');
     }
 
+    public function hasShipment()
+    {
+        return $this->shipment ? true : false;
+    }
+
 }

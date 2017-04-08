@@ -15,6 +15,10 @@ use Istheweb\Shop\Models\InventoryUnit;
 use Istheweb\Shop\Models\TaxRate;
 use System\Classes\ModelBehavior;
 
+/**
+ * Class OrderItemModel
+ * @package istheweb\shop\behaviors
+ */
 class OrderItemModel extends ModelBehavior
 {
 
@@ -25,11 +29,10 @@ class OrderItemModel extends ModelBehavior
         parent::__construct($model);
     }
 
-    public function calculateTotal()
-    {
 
-    }
-
+    /**
+     *
+     */
     public function getTotalItem()
     {
         $id = post('OrderItem[productable]');
@@ -54,56 +57,76 @@ class OrderItemModel extends ModelBehavior
                  */
             }
         }
-
         $this->model->unit_price = $item->price;
         $this->model->unit_total = $item->price * $quantity;
         $this->model->total = $this->model->unit_total;
     }
 
+    /**
+     * Check if exists adjustment for OrderItem
+     * If null add new tax adjustment, else update existing
+     *
+     */
+    public function checkAdjustement()
+    {
+        $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
+        if(is_null($adjustment)){
+            $this->addAdjustment();
+        }else{
+            $this->updateAdjustment($adjustment);
+        }
+    }
+
+    /**
+     * @param $id
+     * @param $type
+     * @return mixed
+     */
     public function getProductable($id, $type)
     {
-        $className = $type;
-        $instance = new $className;
+        $instance = new $type;
         $item = $instance->find($id);
         return $item;
     }
 
-    public function checkAdjustements()
-    {
-        $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
-        if(is_null($adjustment)){
-          $this->addAdjustment();
-        }else{
-          $this->updateAdjustment($adjustment);
-        }
-    }
-
+    /**
+     *
+     */
     public function addAdjustment()
     {
-        $adjustment = $this->model->productable->getTaxRate();
-        $rate = $adjustment->calculate($this->model->total);
+        $tax_rate = $this->model->productable->getTaxRate();
+        $rate = $tax_rate->calculate($this->model->total);
+        $adjustment = new Adjustment();
+        $adjustment->orderable_id = $this->model->id;
+        $adjustment->orderable_type = get_class($this->model);
+        $adjustment->type = TaxRate::TAX_TYPE;
+        $adjustment->name = $tax_rate->name;
+        $adjustment->amount = (int)$rate;
+        $adjustment->is_neutral = TaxRate::isIncludedInPrice();
+        $adjustment->is_locked = false;
+        $adjustment->save();
 
-        $tax_adjustement = new Adjustment();
-        $tax_adjustement->orderable_id = $this->model->id;
-        $tax_adjustement->orderable_type = get_class($this->model);
-        $tax_adjustement->type = TaxRate::TAX_TYPE;
-        $tax_adjustement->name = $adjustment->name;
-        $tax_adjustement->amount = (int)$rate;
-        $tax_adjustement->is_neutral = false;
-        $tax_adjustement->is_locked = false;
-        $tax_adjustement->save();
-        $this->model->order->addTaxAdjustment($tax_adjustement);
-        $this->model->order->updateTotals();
+        $this->model->order->addAdjustment($adjustment);
     }
 
+    /**
+     * @param $adjustment
+     */
     public function updateAdjustment($adjustment){
         if($adjustment->exists){
             $taxrate = $this->model->productable->getTaxRate();
             $rate = $taxrate->calculate($this->model->total);
             $adjustment->amount = (int) $rate;
             $adjustment->save();
-            $this->model->order->updateTaxAdjustment($adjustment->amount);
-            $this->model->order->updateTotals();
+            $this->model->order->updateAdjustment($adjustment);
         }
+    }
+
+    public function removeAdjustment()
+    {
+        $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
+        $id = $adjustment->orderable_id;
+        $type = $adjustment->orderable_type;
+        $adjustment->delete();
     }
 }

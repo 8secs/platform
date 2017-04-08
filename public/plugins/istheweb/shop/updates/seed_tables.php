@@ -13,12 +13,16 @@ use Illuminate\Support\Facades\DB;
 use Istheweb\IsPdf\Models\Layout;
 use Istheweb\IsPdf\Models\Template;
 use Istheweb\Shop\Controllers\TaxCategories;
+use Istheweb\Shop\Models\Address;
 use Istheweb\Shop\Models\Attribute;
 use Istheweb\Shop\Models\AttributeValue;
 use Istheweb\Shop\Models\Category;
 use Istheweb\Shop\Models\Currency;
+use Istheweb\Shop\Models\Customer;
 use Istheweb\Shop\Models\Option;
 use Istheweb\Shop\Models\OptionValue;
+use Istheweb\Shop\Models\Order;
+use Istheweb\Shop\Models\OrderStatus;
 use Istheweb\Shop\Models\Product;
 use Istheweb\Shop\Models\ShippingCategory;
 use Istheweb\Shop\Models\ShippingMethod;
@@ -30,6 +34,7 @@ use Istheweb\Shop\Models\Zone;
 use October\Rain\Database\Updates\Seeder;
 use OpenCloud\Common\Constants\State;
 use RainLab\Location\Models\Country;
+use RainLab\User\Models\User;
 
 
 class SeedTables extends Seeder
@@ -773,5 +778,22 @@ class SeedTables extends Seeder
             "currency"              =>"1",
             "order_reference"       =>"2000000"
         ]);
+
+        $customer = new Customer();
+        $customer->user = User::find(1);
+        $customer->phone = '955712646';
+        $customer->mobile = '647583630';
+        $customer->cif = '123456789F';
+        $customer->save();
+
+        $address = new Address();
+        $address->customer = $customer;
+        $address->country = Country::find(210);
+        $address->state = \RainLab\Location\Models\State::find(445);
+        $address->address_1 = 'Calle Bernardo Caballero de Carpio, 28';
+        $address->city = 'Espartinas';
+        $address->postcode = '41807';
+        $address->save();
+
     }
 }

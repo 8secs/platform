@@ -63,8 +63,11 @@ class OrderItem extends Model
 
     public function afterSave()
     {
-        $this->checkAdjustements();
+        $this->checkAdjustement();
     }
 
-
+    public function beforeDelete()
+    {
+        $this->removeAdjustment();
+    }
 }

@@ -1,5 +1,6 @@
 <?php namespace Istheweb\Shop\Models;
 
+use istheweb\shop\behaviors\OrderModel;
 use Model;
 
 /**

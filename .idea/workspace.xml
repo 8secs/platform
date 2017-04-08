@@ -2,29 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf1ab3c-7566-49d2-a252-73e08bfb5c98" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/8c/53/8c53ed3bfd167d2f85044017a3c25db9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/91/29/91294d49cb9a518203d98de00c87f985" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/b1067037c83dc1464e6dcca04895baf877a2b273" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/b45f2367dc6605753f17cfe0cc21ba2b3d9217b8" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/ShipmentModel.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/cache/6e/23/home.htm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/cms/twig/cd/cdac189bee8ed83cf5aabe9a2fd10b533aa2cf20bb290fde75ae0fe43469d0e3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/13/d8/13d85d9352822f95c4ef0e07deaafdd4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/30/51/30514156e0f5c0f8f2a9c0db7f07d12e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/4e/57/4e578e68acf6a6357b542589032d8c3f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/9f/3d/9f3db241136ad4f6956956488f8c4b02" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/b5/a5/b5a51c02c60e20d9e3d8d175803341d7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/c0/6a/c06a5b99001ab394e16834dd0c6c461b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/cache/f4/cb/f4cb685a59880e9c9622b7178ad8585e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/70cabf28c5df182e669d3a2e7a5d3c9b4ac4f59b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/f277945ff1d858c3ef3c4baf63c69457b11a356e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storage/framework/sessions/ff97067cd842dc6725d297e2101a5dede2cec9c9" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/assets/js/recordfinder.js" afterPath="$PROJECT_DIR$/public/modules/backend/formwidgets/recordfinder/assets/js/recordfinder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/lang/nl/lang.php" afterPath="$PROJECT_DIR$/public/modules/backend/lang/nl/lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_balloon-selector.htm" afterPath="$PROJECT_DIR$/public/modules/backend/widgets/form/partials/_field_balloon-selector.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/assets/js/october.cmspage.js" afterPath="$PROJECT_DIR$/public/modules/cms/assets/js/october.cmspage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/cms/lang/nl/lang.php" afterPath="$PROJECT_DIR$/public/modules/cms/lang/nl/lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/js/checkbox.balloon.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/js/checkbox.balloon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/js/inspector.validationset.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/js/inspector.validationset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/less/chart.less" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/less/chart.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/storm-min.js" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/storm-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/assets/ui/storm.css" afterPath="$PROJECT_DIR$/public/modules/system/assets/ui/storm.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/classes/CombineAssets.php" afterPath="$PROJECT_DIR$/public/modules/system/classes/CombineAssets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/controllers/Updates.php" afterPath="$PROJECT_DIR$/public/modules/system/controllers/Updates.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/controllers/updates/_update_list.htm" afterPath="$PROJECT_DIR$/public/modules/system/controllers/updates/_update_list.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/en/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/en/lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/lang/nl/lang.php" afterPath="$PROJECT_DIR$/public/modules/system/lang/nl/lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/system/models/PluginVersion.php" afterPath="$PROJECT_DIR$/public/modules/system/models/PluginVersion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/READMIE.md" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/READMIE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShipmentItem.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShipmentItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_tables.php" afterPath="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_tables.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/assets/js/pages-page.js" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/assets/js/pages-page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/updates/version.yaml" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/updates/version.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/autoload.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/public/plugins/rainlab/pages/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/cms/cache/06/ad/default.htm.php" afterPath="$PROJECT_DIR$/public/storage/cms/cache/06/ad/default.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/cms/cache/29/85/footer.htm.php" afterPath="$PROJECT_DIR$/public/storage/cms/cache/29/85/footer.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/cms/cache/2e/2e/header.htm.php" afterPath="$PROJECT_DIR$/public/storage/cms/cache/2e/2e/header.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/cms/cache/44/e4/404.htm.php" afterPath="$PROJECT_DIR$/public/storage/cms/cache/44/e4/404.htm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/0c/b0/0cb04905781de3dbf2424ab012adf555" afterPath="$PROJECT_DIR$/public/storage/framework/cache/0c/b0/0cb04905781de3dbf2424ab012adf555" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/13/d8/13d85d9352822f95c4ef0e07deaafdd4" afterPath="$PROJECT_DIR$/public/storage/framework/cache/13/d8/13d85d9352822f95c4ef0e07deaafdd4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/10/11/101117eeee6e0be3b733b91017dee347" afterPath="$PROJECT_DIR$/public/storage/framework/cache/10/11/101117eeee6e0be3b733b91017dee347" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" afterPath="$PROJECT_DIR$/public/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/1e/c5/1ec5f4318ce114f486444c38d6d5f5b4" afterPath="$PROJECT_DIR$/public/storage/framework/cache/1e/c5/1ec5f4318ce114f486444c38d6d5f5b4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/39/3e/393ed5257bf4db97a1042f2a7595ce14" afterPath="$PROJECT_DIR$/public/storage/framework/cache/39/3e/393ed5257bf4db97a1042f2a7595ce14" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" afterPath="$PROJECT_DIR$/public/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" afterPath="$PROJECT_DIR$/public/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/5c/71/5c7172a25eac0e671fdf44d769b25a78" afterPath="$PROJECT_DIR$/public/storage/framework/cache/5c/71/5c7172a25eac0e671fdf44d769b25a78" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" afterPath="$PROJECT_DIR$/public/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" afterPath="$PROJECT_DIR$/public/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/60/c9/60c9652d54898a9ab268a22a645c5202" afterPath="$PROJECT_DIR$/public/storage/framework/cache/60/c9/60c9652d54898a9ab268a22a645c5202" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/6f/62/6f62ddb592d31134e2836840a465439e" afterPath="$PROJECT_DIR$/public/storage/framework/cache/6f/62/6f62ddb592d31134e2836840a465439e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/80/c8/80c84920dfcdae721f9325b8acb6bf64" afterPath="$PROJECT_DIR$/public/storage/framework/cache/80/c8/80c84920dfcdae721f9325b8acb6bf64" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/86/a0/86a0204a18fb344ac088ac716026a124" afterPath="$PROJECT_DIR$/public/storage/framework/cache/86/a0/86a0204a18fb344ac088ac716026a124" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/86/d9/86d9fa5d87c40083a4069c799742efb7" afterPath="$PROJECT_DIR$/public/storage/framework/cache/86/d9/86d9fa5d87c40083a4069c799742efb7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/8a/61/8a6171ed6388d2ad23b281f51588e5fa" afterPath="$PROJECT_DIR$/public/storage/framework/cache/8a/61/8a6171ed6388d2ad23b281f51588e5fa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/8c/53/8c53ed3bfd167d2f85044017a3c25db9" afterPath="$PROJECT_DIR$/public/storage/framework/cache/8c/53/8c53ed3bfd167d2f85044017a3c25db9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/91/aa/91aaeb3d3720451f3d8056ef80f92eff" afterPath="$PROJECT_DIR$/public/storage/framework/cache/91/aa/91aaeb3d3720451f3d8056ef80f92eff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/9c/0f/9c0f4cfb8303e4bcdb8e266a400b3ecf" afterPath="$PROJECT_DIR$/public/storage/framework/cache/9c/0f/9c0f4cfb8303e4bcdb8e266a400b3ecf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/a1/f7/a1f74de7779d5838a058998a9dfe30db" afterPath="$PROJECT_DIR$/public/storage/framework/cache/a1/f7/a1f74de7779d5838a058998a9dfe30db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/ac/09/ac091a88a262919299bb4af7f5fa96ed" afterPath="$PROJECT_DIR$/public/storage/framework/cache/ac/09/ac091a88a262919299bb4af7f5fa96ed" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/b3/40/b3400be9590a4786d79a0a75a1cee05c" afterPath="$PROJECT_DIR$/public/storage/framework/cache/b3/40/b3400be9590a4786d79a0a75a1cee05c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/c6/22/c622c9a2978a3032dc6132413e617630" afterPath="$PROJECT_DIR$/public/storage/framework/cache/c6/22/c622c9a2978a3032dc6132413e617630" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/framework/cache/d7/2d/d72d8bf3ba168108ab77ea2bf95e1555" afterPath="$PROJECT_DIR$/public/storage/framework/cache/d7/2d/d72d8bf3ba168108ab77ea2bf95e1555" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/storage/logs/system.log" afterPath="$PROJECT_DIR$/public/storage/logs/system.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +98,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="790">
+              <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OrderModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="343">
+              <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+              <folding>
+                <element signature="e#124#160#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderItem.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -61,28 +133,40 @@
       <file leaf-file-name="OrderItemModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+            <state relative-caret-position="618">
+              <caret line="120" column="44" lean-forward="false" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adjustment.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
+      <file leaf-file-name="TaxRate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="559">
-              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="39" />
+              <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shipment.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shipment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+            <state relative-caret-position="-270">
+              <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+              <folding>
+                <element signature="e#39#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShipmentModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/ShipmentModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -92,7 +176,29 @@
         <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShipmentItem.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#39#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Adjustment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Variant.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="47" column="91" lean-forward="false" selection-start-line="47" selection-start-column="91" selection-end-line="47" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -102,7 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>create_pivots_table</find>
       <find>$option</find>
       <find>$attribute</find>
       <find>product_id</find>
@@ -116,7 +221,23 @@
       <find>getTaxRate</find>
       <find>inventor</find>
       <find>calculateAdjustments</find>
+      <find>addTaxAdjustment</find>
+      <find>$tax_adjustement</find>
+      <find>addres</find>
+      <find>$new_adjustment</find>
+      <find>$new_ad</find>
+      <find>getMethods</find>
+      <find>shippab</find>
+      <find>shippable</find>
+      <find>hippable</find>
+      <find>$this</find>
+      <find>cal</find>
+      <find>$this-&gt;model-&gt;shipping_method</find>
+      <find>$ids</find>
       <find>calculateShipment</find>
+      <find>$new</find>
+      <find>addAdjustments</find>
+      <find>checkAdustments</find>
     </findStrings>
     <replaceStrings>
       <replace>$option</replace>
@@ -127,7 +248,18 @@
       <replace>&quot;=&gt;</replace>
       <replace>1</replace>
       <replace>&quot;1&quot;</replace>
+      <replace>$adjustment</replace>
+      <replace>$new_ad</replace>
+      <replace>$adjust</replace>
+      <replace>$this-&gt;model</replace>
+      <replace>shipping_method</replace>
+      <replace>$shipping_method</replace>
+      <replace>$is_cat</replace>
+      <replace>$product</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public/plugins/istheweb/shop</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,20 +267,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_spain_states_table.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_orders_table.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_order_items_table.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_portugal_states_table.php" />
         <option value="$PROJECT_DIR$/bbdd/istheweb_shop_attributes.sql" />
         <option value="$PROJECT_DIR$/bbdd/istheweb_shop_pivots.sql" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/AttributeValue.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/ispdf/models/Layout.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/connect/updates/version.yaml" />
         <option value="$PROJECT_DIR$/bbdd/backend_users.sql" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/iscorporate/updates/seed_tables.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/connect/updates/seed_tables.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_tables.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/iscorporate/Plugin.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/en/lang.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/ispdf/lang/cs/lang.php" />
@@ -157,7 +285,6 @@
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Address.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/formwidgets/userclient/partials/_usercreate_form.htm" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/formwidgets/OrderItemVariant.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/orderitem/columns.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/Plugin.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/composer.json" />
@@ -167,25 +294,30 @@
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/shipping/Model/Shipment.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/version.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/product/fields.yaml" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/orders/config_relation.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/orders/_field_shipment.htm" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/es/lang.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/lang/en/lang.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/shipment/columns.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Product.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipment_items_table.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/shipment/fields.yaml" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingMethod.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_tables.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/READMIE.md" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShipmentItem.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" />
-        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/ShipmentModel.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php" />
         <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php" />
+        <option value="$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php" />
       </list>
     </option>
   </component>
@@ -222,8 +354,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,6 +421,92 @@
               <option name="myItemId" value="istheweb" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="istheweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="istheweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="behaviors" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plataform" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="istheweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -302,7 +520,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="add_unversioned_files" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Adjustm&#9;FILE&#9;file:///home/andres/Documentos/IsTheWeb/proyecto/plataform/public/plugins/istheweb/shop/models/Adjustment.php" />
+    <property name="SearchEverywhereHistoryKey" value="Tax&#9;FILE&#9;file:///home/andres/Documentos/IsTheWeb/proyecto/plataform/public/plugins/istheweb/shop/models/TaxRate.php&#10;Adjust&#9;FILE&#9;file:///home/andres/Documentos/IsTheWeb/proyecto/plataform/public/plugins/istheweb/shop/models/Adjustment.php&#10;OrderIt&#9;FILE&#9;file:///home/andres/Documentos/IsTheWeb/proyecto/plataform/public/plugins/istheweb/shop/models/OrderItem.php&#10;Adjustm&#9;FILE&#9;file:///home/andres/Documentos/IsTheWeb/proyecto/plataform/public/plugins/istheweb/shop/models/Adjustment.php" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -398,26 +616,31 @@
       <workItem from="1491233342918" duration="93000" />
       <workItem from="1491233606608" duration="12497000" />
       <workItem from="1491332760979" duration="2553000" />
-      <workItem from="1491368736775" duration="376000" />
+      <workItem from="1491368736775" duration="909000" />
+      <workItem from="1491419944309" duration="3133000" />
+      <workItem from="1491489995788" duration="12372000" />
+      <workItem from="1491575803323" duration="18758000" />
+      <workItem from="1491627932808" duration="19143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103743000" />
+    <option name="totallyTimeSpent" value="157682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21291356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17342582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17129135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23695198" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2776618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29436326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31941545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -425,7 +648,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -455,66 +677,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/InventoryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipping_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/shipping/Repository/ShippingMethodRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/shipping/spec/Model/ShipmentUnitSpec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/product/Model/Variant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/variation/Model/VariantInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/product/Model/VariantInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/vendor/sylius/shipping/Model/ShippingCategoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -600,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/product/fields.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="123" column="50" lean-forward="false" selection-start-line="123" selection-start-column="50" selection-end-line="123" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/formwidgets/OrderItemVariant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
@@ -649,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/shipment/columns.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -677,38 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_adjustments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipment_items_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipping_methods_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="59" column="70" lean-forward="false" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -733,34 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -775,6 +873,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="796" column="0" lean-forward="true" selection-start-line="796" selection-start-column="0" selection-end-line="796" selection-end-column="0" />
+          <folding>
+            <marker date="1491496622772" expanded="true" signature="24928:24985" ph="..." />
+            <marker date="1491496622772" expanded="true" signature="30061:30067" ph="€" />
+            <marker date="1491496622772" expanded="true" signature="30125:30131" ph="€" />
+            <marker date="1491496622772" expanded="true" signature="30346:30352" ph="€" />
+            <marker date="1491496622772" expanded="true" signature="30535:30541" ph="€" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/seed_spain_states_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#81#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/order/fields.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/READMIE.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="441">
+            <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipment_items_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_adjustments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/controllers/products/config_relation.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_shipping_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShippingCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/product/fields.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="50" column="91" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Variant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="47" column="91" lean-forward="false" selection-start-line="47" selection-start-column="91" selection-end-line="47" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/updates/create_orders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/TaxRate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="120" column="44" lean-forward="false" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/ShipmentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/OrderItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -782,40 +1039,38 @@
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/ShipmentItem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#39#78#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php">
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+        <state relative-caret-position="379">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="343">
+          <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding>
+            <element signature="e#124#160#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/behaviors/OrderItemModel.php">
+    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Shipment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins/istheweb/shop/models/Adjustment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="-270">
+          <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+          <folding>
+            <element signature="e#39#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

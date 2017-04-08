@@ -50,4 +50,5 @@ class Adjustment extends Model
             ->where('type', $type)
             ->sum('amount');
     }
+
 }

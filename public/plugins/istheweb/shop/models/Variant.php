@@ -44,7 +44,8 @@ class Variant extends Base implements StockableInterface
     ];
 
     public $morphMany = [
-        'order_items'      => ['Istheweb\Shop\Models\OrderItem', 'name' => 'productable']
+        'order_items'      => ['Istheweb\Shop\Models\OrderItem', 'name' => 'productable'],
+        'shipping_items'    => ['Istheweb\Shop\Models\ShippingItem', 'name' => 'shippable']
     ];
 
     public function getPricingCalculatorOptions(){

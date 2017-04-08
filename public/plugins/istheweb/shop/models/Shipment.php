@@ -56,6 +56,13 @@ class Shipment extends Model
     public $table = 'istheweb_shop_shipments';
 
     /**
+     * @var array Implements bevaviors
+     */
+    public $implement = [
+        'Istheweb.Shop.Behaviors.ShipmentModel'
+    ];
+
+    /**
      * @var array Guarded fields
      */
     protected $guarded = ['*'];
@@ -100,53 +107,9 @@ class Shipment extends Model
     /**
      *
      */
-    public function beforeSave()
-    {
-
-    }
-
-    /**
-     *
-     */
-    public function afterCreate()
-    {
-        self::createShipmentItems();
-    }
-
-    /**
-     *
-     */
-    public function afterUpdate()
+    public function afterSave()
     {
         self::updateShipmentItems();
-    }
-
-    /**
-     *
-     */
-    protected function createShipmentItems()
-    {
-        $products = self::getProductables($this->order);
-        foreach($products as $id){
-            self::addShippingItem($id);
-        }
-        $this->order->addShipmentAdjustement();
-    }
-
-    /**
-     *
-     */
-    protected function updateShipmentItems()
-    {
-        $products = self::getProductables($this->order);
-        if(!$this->shipping_items->isEmpty()){
-            foreach($products as $id){
-                if(!$this->shipping_items->contains('shippable_id', $id)){
-                    self::addShippingItem($id);
-                }
-            }
-        }
-        $this->order->updateShipmentAdjustment();
     }
 
     /**
@@ -164,15 +127,54 @@ class Shipment extends Model
     }
 
     /**
+     *
+     */
+    public function updateShipmentItems()
+    {
+        $products = self::getProductables($this->order);
+        if($this->shipping_items->isEmpty()){
+            if(is_array($products) && count($products) > 0){
+                foreach($products as $product){
+                    self::addShippingItem($product['id'], $product['type']);
+                }
+            }
+        }else{
+            foreach($this->shipping_items as $item){
+                $product = array_first($products, function($value) use ($item){
+                    $in = false;
+                    if(!$item->shippable_id == $value['id']
+                        && !$item->shippable_type == $value['type']) {
+                        $in = true;
+                    }
+                    return $in;
+                });
+                if(!is_null($product)){
+                    self::addShippingItem($product['id'], $product['type']);
+                }
+            }
+        }
+        $this->order->checkAdjustments();
+    }
+
+    /**
      * @return mixed
      */
     public function calculateShipment()
     {
+        $total = 0;
         if($this->shipping_method->calculator == 'flat_rate'){
-            return $this->shipping_method->amount;
+            $total = $this->shipping_method->amount;
         }elseif($this->shipping_method == 'per_unit_rate'){
-            return $this->shipping_method->amount * $this->shipping_items->count();
+            $total = $this->shipping_method->amount * $this->shipping_items->count();
+            //dd(dump($total));
         }
+        $amounts = explode( '.', $total);
+        if(count($amounts) == 2){
+            $amount = $amounts[0]."".$amounts[1];
+        }else{
+            $amount = $total."00";
+        }
+        return $amount;
     }
 
     /**
@@ -181,7 +183,7 @@ class Shipment extends Model
      */
     protected function getMethods($order)
     {
-        $products = self::getProductables($order);
+        $products = self::getProductables($order, true);
         if(count($products) > 0){
             $methods = ShippingMethod::whereIn('shipping_category_id', $products)->lists('name', 'id');
             return $methods;
@@ -194,19 +196,22 @@ class Shipment extends Model
      * @param $order
      * @return array
      */
-    protected function getProductables($order)
+    protected function getProductables($order, $is_cat = false)
     {
         $products = array();
-        if($order->order_items->count() > 0){
+        if(!$order->order_items->isEmpty()){
             foreach($order->order_items as $order_item)
             {
                 $item = $order_item->productable;
-                if($order_item->productable_type == 'Istheweb\Shop\Models\Variant'){
-                    $product = $item->product;
+                if(!$is_cat) {
+                    array_push($products, ['id' => $item->id, 'type' => get_class($item)]);
                 }else{
-                    $product = $item;
+                    if(get_class($item) == 'Istheweb\Shop\Models\Variant'){
+                        array_push($products, $item->product->shipping_category->id);
+                    }else{
+                        array_push($products, $item->shipping_category->id);
+                    }
                 }
-                array_push($products, $product->id);
             }
         }
         return $products;
@@ -215,11 +220,12 @@ class Shipment extends Model
     /**
      * @param $id
      */
-    protected function addShippingItem($id)
+    protected function addShippingItem($id, $type)
     {
         $item = new ShipmentItem();
         $item->shipment = $this;
-        $item->shippable = Product::find($id);
+        $item->shippable_id = $id;
+        $item->shippable_type = $type;
         $item->state = self::STATE_READY;
         $item->save();
         $this->shipping_items()->add($item);

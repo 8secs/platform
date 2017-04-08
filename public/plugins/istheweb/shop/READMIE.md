@@ -1,6 +1,33 @@
-# ESTADOS DE PEDIDOS Y PROCESO DE COMPRA
+Modelos que intervienen en los ajustes de un pedido
+====================================
+
+* User
+* Customer
+* Address
+* Order
+* OrderItem
+* OrderStatus
+* Adjustment
+* TaxRate
+* Shipment
+* ShipmentMethod
+* PaymentMethod
+
+Ajustments:
+ * Tax
+ * Shipment
+ * Discount
+ * Promotion
+
+Tax Adjustment 
+* To Order
+* To OrderItem
+Shipment Adjustment
+* To Order
 
 
+ESTADOS DE PEDIDOS Y PROCESO DE COMPRA
+=========================================
 Cuando un usuario registrado completa el trámite del pedido y pincha en el botón COMPRAR AHORA, el sistema guarda un registro del pedido que inmediatamente queda reflejado en el panel de gestión, independientemente del método de pago escogido.
 
 * Método de pago Reembolso:
