@@ -67,7 +67,7 @@ class Order extends Model
 
     public function beforeSave()
     {
-        $this->reference = self::formatReference();
+        $this->reference = $this->reference ?: self::formatReference();
     }
 
     public function scopeLastReference($query){

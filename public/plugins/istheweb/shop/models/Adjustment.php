@@ -40,6 +40,7 @@ class Adjustment extends Model
     public function scopeFindByShipping($query, $orderable)
     {
         return $query->where('orderable_id', $orderable->id)
+            ->where('orderable_type', get_class($orderable))
             ->where('type', Shipment::SHIPMENT_TYPE);
     }
 

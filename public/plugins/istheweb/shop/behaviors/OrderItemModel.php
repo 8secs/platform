@@ -12,6 +12,7 @@ namespace istheweb\shop\behaviors;
 use istheweb\shop\classes\AvailabilityChecker;
 use Istheweb\Shop\Models\Adjustment;
 use Istheweb\Shop\Models\InventoryUnit;
+use Istheweb\Shop\Models\OrderItem;
 use Istheweb\Shop\Models\TaxRate;
 use System\Classes\ModelBehavior;
 
@@ -70,6 +71,7 @@ class OrderItemModel extends ModelBehavior
     public function checkAdjustement()
     {
         $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
+
         if(is_null($adjustment)){
             $this->addAdjustment();
         }else{
@@ -106,7 +108,7 @@ class OrderItemModel extends ModelBehavior
         $adjustment->is_locked = false;
         $adjustment->save();
 
-        $this->model->order->addAdjustment($adjustment);
+        $this->model->order->updateAdjustment($adjustment);
     }
 
     /**
@@ -124,9 +126,9 @@ class OrderItemModel extends ModelBehavior
 
     public function removeAdjustment()
     {
-        $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
-        $id = $adjustment->orderable_id;
-        $type = $adjustment->orderable_type;
+        $item = OrderItem::find($this->model->id);
+        $adjustment = Adjustment::findByTaxOrderable($item)->first();
         $adjustment->delete();
+        $this->model->order->updateAdjustment($adjustment);
     }
 }

@@ -11,6 +11,7 @@ namespace istheweb\shop\behaviors;
 
 use Istheweb\Shop\Models\Adjustment;
 use Istheweb\Shop\Models\Order;
+use Istheweb\Shop\Models\OrderItem;
 use Istheweb\Shop\Models\Shipment;
 use Istheweb\Shop\Models\ShippingMethod;
 use Istheweb\Shop\Models\ShopSettings;
@@ -59,14 +60,14 @@ class OrderModel extends ModelBehavior
         }
 
         $this->model->subtotal = $base;
-        $this->model->adjustments_total = $this->calculateAdjustments();
+        //$this->model->adjustments_total = $this->calculateAdjustments();
         $taxes = Adjustment::sumAdjustment($this->model, TaxRate::TAX_TYPE);
         $this->model->tax = self::formatAdjustemnt($taxes);
         if($this->model->hasShipment()){
             $shipping = Adjustment::sumAdjustment($this->model, Shipment::SHIPMENT_TYPE);
             $this->model->shipping = self::formatAdjustemnt($shipping);
         }
-
+        $this->model->adjustments_total = $taxes + $shipping;
         $this->model->total = $this->model->subtotal + $this->model->tax + $this->model->shipping;
         $this->model->save();
     }
@@ -77,11 +78,15 @@ class OrderModel extends ModelBehavior
     public function checkAdjustments()
     {
         $shipment_adjust = Adjustment::findByShipping($this->model)->first();
-
+        //dd(dump($shipment_adjust));
         if(is_null($shipment_adjust)){
             self::addAdjustment();
         }else{
-            $shipment_adjust->amount = $this->model->shipment->calculateShipment();
+            $shipment = Shipment::shipmentWithItems($this->model);
+            if($shipment->shipping_items->count() != $this->model->order_items->count()){
+                $shipment->updateShipmentItems(true);
+            }
+            $shipment_adjust->amount = $shipment->calculateShipment();
             $shipment_adjust->save();
         }
         self::updateTotals();
@@ -106,24 +111,19 @@ class OrderModel extends ModelBehavior
             $adjust->is_neutral = $adjustment->is_neutral;
             $adjust->is_locked = $adjustment->is_locked;
             $adjust->save();
+            self::checkAdjustments();
         }else{
             $method = self::getShippingMethod();
-            $adjust->name = $method->name;
-            $adjust->amount = $this->model->shipment->calculateShipment();
-            $adjust->type = Shipment::SHIPMENT_TYPE;
-            $adjust->is_neutral = false;
-            $adjust->is_locked = false;
-            $adjust->save();
+            $shipment = Shipment::shipmentWithItems($this->model);
+            if(!is_null($method)){
+                $adjust->name = $method->name;
+                $adjust->amount = $shipment->calculateShipment();
+                $adjust->type = Shipment::SHIPMENT_TYPE;
+                $adjust->is_neutral = false;
+                $adjust->is_locked = false;
+                $adjust->save();
+            }
         }
-
-        self::checkAdjustments();
-
-        /*
-        if($adjust->type == TaxRate::TAX_TYPE && $this->model->hasShipment()){
-            $this->model->shipment->updateShipmentItems();
-        }
-        self::updateTotals();
-        */
     }
 
     /**
@@ -133,19 +133,11 @@ class OrderModel extends ModelBehavior
     public function updateAdjustment($adjust)
     {
         if($adjust->type == TaxRate::TAX_TYPE){
-            $adjustment = Adjustment::FindByTaxOrderable($this->model)->first();
-            if(!is_null($adjustment) && $adjustment->exists){
-                $adjustment->amount = (int) $adjustment->amount;
-                $adjustment->save();
-                /*
-                if($adjustment->type == TaxRate::TAX_TYPE && $this->model->hasShipment()){
-                    $this->model->shipment->updateShipmentItems();
-                }
-                self::updateTotals();
-                */
-                self::checkAdjustments();
-            }else{
-                self::addAdjustment($adjust);
+            self::deleteAdjustments();
+            foreach($this->model->order_items as $item){
+                $adjustment = Adjustment::findByTaxOrderable($item)
+                    ->first();
+                self::addAdjustment($adjustment);
             }
         }
     }
@@ -156,21 +148,13 @@ class OrderModel extends ModelBehavior
     public function calculateAdjustments()
     {
         $total = 0;
-        foreach($this->model->adjustments as $adjustment)
+        $adjustments = Adjustment::findByTaxOrderable($this->model)->get();
+        foreach($adjustments as $adjustment)
         {
             $total += $adjustment->amount;
         }
-        return $total;
-    }
 
-    /**
-     * @return mixed
-     */
-    protected function getShippingMethod()
-    {
-        $shipment = $this->model->shipment;
-        $method = $shipment->shipping_method_id;
-        return ShippingMethod::find($method);
+        return $total;
     }
 
     /**
@@ -181,4 +165,29 @@ class OrderModel extends ModelBehavior
     {
         return number_format(($adjustment/100), 2);
     }
+
+    protected function deleteAdjustments()
+    {
+        $adjustments = Adjustment::FindByTaxOrderable($this->model)->get();
+        foreach($adjustments as $adjustment)
+        {
+            $adjustment->delete();
+        }
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getShippingMethod()
+    {
+        $shipment = $this->model->shipment;
+        $method = null;
+        if(!is_null($shipment)){
+            $id = $shipment->shipping_method_id;
+            $method = ShippingMethod::find($id);
+        }
+        return $method;
+    }
+
+
 }

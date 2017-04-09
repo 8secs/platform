@@ -33,4 +33,10 @@ class ShipmentItem extends Model
     {
         return $query->where('shippable_id', $shippable_id);
     }
+
+    public function scopeShipmentItemsByShipment($query, $shipment)
+    {
+        return $query->where('shipment_id', $shipment->id)
+            ->get();
+    }
 }

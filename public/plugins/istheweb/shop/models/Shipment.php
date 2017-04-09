@@ -112,6 +112,13 @@ class Shipment extends Model
         self::updateShipmentItems();
     }
 
+    public function scopeShipmentWithItems($query, $order)
+    {
+        return $query->with('shipping_items')
+            ->where('order_id', $order->id)
+            ->first();
+    }
+
     /**
      * @return array
      */
@@ -126,34 +133,32 @@ class Shipment extends Model
         }
     }
 
+    public function shipmentItemsCount()
+    {
+        $count = 0;
+        if(!is_null($this->shipment_items)){
+            $count = $this->shipment_items->count();
+        }
+        return $count;
+    }
+
     /**
      *
      */
-    public function updateShipmentItems()
+    public function updateShipmentItems($is_order = false)
     {
         $products = self::getProductables($this->order);
-        if($this->shipping_items->isEmpty()){
-            if(is_array($products) && count($products) > 0){
-                foreach($products as $product){
-                    self::addShippingItem($product['id'], $product['type']);
-                }
-            }
-        }else{
-            foreach($this->shipping_items as $item){
-                $product = array_first($products, function($value) use ($item){
-                    $in = false;
-                    if(!$item->shippable_id == $value['id']
-                        && !$item->shippable_type == $value['type']) {
-                        $in = true;
-                    }
-                    return $in;
-                });
-                if(!is_null($product)){
-                    self::addShippingItem($product['id'], $product['type']);
-                }
+        //$shipment_items = ShipmentItem::shipmentItemsByShipment($this);
+        self::deleteShippingItems();
+        if(is_array($products) && count($products) > 0){
+            foreach($products as $product){
+                self::addShippingItem($product['id'], $product['type']);
             }
         }
-        $this->order->checkAdjustments();
+
+        if(!$is_order){
+            $this->order->checkAdjustments();
+        }
     }
 
     /**
@@ -162,15 +167,18 @@ class Shipment extends Model
     public function calculateShipment()
     {
         $total = 0;
-        if($this->shipping_method->calculator == 'flat_rate'){
+        $method = ShippingMethod::find($this->shipping_method->id);
+
+        if($method->calculator == 'flat_rate'){
             $total = $this->shipping_method->amount;
-        }elseif($this->shipping_method == 'per_unit_rate'){
-            $total = $this->shipping_method->amount * $this->shipping_items->count();
-            //dd(dump($total));
+        }elseif($method->calculator == 'per_unit_rate'){
+            $order = Order::find($this->order_id);
+            $total = $method->amount * OrderItem::orderCountItems($order);
         }
         $amounts = explode( '.', $total);
         if(count($amounts) == 2){
-            $amount = $amounts[0]."".$amounts[1];
+            $amount1 = strlen($amounts[1]) == 2 ? $amounts[1] : $amounts[1].'0';
+            $amount = $amounts[0]."".$amount1;
         }else{
             $amount = $total."00";
         }
@@ -229,5 +237,13 @@ class Shipment extends Model
         $item->state = self::STATE_READY;
         $item->save();
         $this->shipping_items()->add($item);
+    }
+
+    protected function deleteShippingItems()
+    {
+        $shipment_items = ShipmentItem::shipmentItemsByShipment($this);
+        foreach($shipment_items as $item){
+            $item->delete();
+        }
     }
 }

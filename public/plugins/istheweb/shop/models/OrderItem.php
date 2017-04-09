@@ -70,4 +70,9 @@ class OrderItem extends Model
     {
         $this->removeAdjustment();
     }
+
+    public function scopeOrderCountItems($query,$order)
+    {
+        return $query->where('order_id', $order->id)->sum('quantity');
+    }
 }
