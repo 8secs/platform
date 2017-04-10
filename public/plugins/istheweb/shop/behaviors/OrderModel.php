@@ -130,11 +130,12 @@ class OrderModel extends ModelBehavior
      * @param $type
      * @param null $amount
      */
-    public function updateAdjustment($adjust)
+    public function updateAdjustment($type)
     {
-        if($adjust->type == TaxRate::TAX_TYPE){
+        if($type == TaxRate::TAX_TYPE){
             self::deleteAdjustments();
-            foreach($this->model->order_items as $item){
+            $order_items = OrderItem::where('order_id', $this->model->id)->get();
+            foreach($order_items as $item){
                 $adjustment = Adjustment::findByTaxOrderable($item)
                     ->first();
                 self::addAdjustment($adjustment);

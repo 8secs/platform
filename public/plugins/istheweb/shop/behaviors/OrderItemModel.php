@@ -108,7 +108,7 @@ class OrderItemModel extends ModelBehavior
         $adjustment->is_locked = false;
         $adjustment->save();
 
-        $this->model->order->updateAdjustment($adjustment);
+        $this->model->order->updateAdjustment(TaxRate::TAX_TYPE);
     }
 
     /**
@@ -120,7 +120,7 @@ class OrderItemModel extends ModelBehavior
             $rate = $taxrate->calculate($this->model->total);
             $adjustment->amount = (int) $rate;
             $adjustment->save();
-            $this->model->order->updateAdjustment($adjustment);
+            $this->model->order->updateAdjustment(TaxRate::TAX_TYPE);
         }
     }
 
@@ -129,6 +129,5 @@ class OrderItemModel extends ModelBehavior
         $item = OrderItem::find($this->model->id);
         $adjustment = Adjustment::findByTaxOrderable($item)->first();
         $adjustment->delete();
-        $this->model->order->updateAdjustment($adjustment);
     }
 }
