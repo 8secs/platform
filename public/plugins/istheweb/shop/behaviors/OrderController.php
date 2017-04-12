@@ -9,6 +9,7 @@
 namespace istheweb\shop\behaviors;
 
 use Flash;
+use Redirect;
 use Istheweb\Shop\Models\Order;
 
 class OrderController extends BaseController
@@ -34,6 +35,26 @@ class OrderController extends BaseController
     protected function getEmptyCheckMessage()
     {
         return trans('istheweb.shop::lang.order.delete_selected_empty');
+    }
+
+    public function onRelationManageCreate()
+    {
+        /*
+        $relation_field = post('_relation_field');
+        if($relation_field == 'order_items' || $relation_field == 'shipment'){
+            return Redirect::refresh();
+        }
+        */
+
+    }
+
+    public function onRelationManageUpdate(){
+        /*
+        $relation_field = post('_relation_field');
+        if($relation_field == 'order_items' || $relation_field == 'shipment'){
+            return Redirect::refresh();
+        }
+        */
     }
 
 }

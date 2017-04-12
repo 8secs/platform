@@ -48,7 +48,8 @@ class Product extends Base implements StockableInterface, ShippableInterface
     public $morphOne = [];
     public $morphMany = [
         'order_items'       => ['Istheweb\Shop\Models\OrderItem', 'name' => 'productable'],
-        'shipping_items'    => ['Istheweb\Shop\Models\ShippingItem', 'name' => 'shippable']
+        'shipping_items'    => ['Istheweb\Shop\Models\ShippingItem', 'name' => 'shippable'],
+        'inventory_units'   => ['Istheweb\Shop\Models\InventoryUnit', 'name' => 'stockable'],
     ];
     public $attachOne = [];
     public $attachMany = [

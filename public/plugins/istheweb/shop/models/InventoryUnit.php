@@ -14,10 +14,35 @@ class InventoryUnit extends Model
      * Default states.
      */
     const STATE_CHECKOUT = 'checkout';
+
     const STATE_ONHOLD = 'onhold';
+
     const STATE_SOLD = 'sold';
+
     const STATE_BACKORDERED = 'backordered';
+
     const STATE_RETURNED = 'returned';
+
+    /**
+     * Default transitions
+     */
+
+    const GRAPH = 'istheweb_inventory_unit';
+
+    const ISTHEWEB_HOLD = 'hold';
+
+    const ISTHEWEB_BACKORDER = 'backorder';
+
+    const ISTHEWEB_SELL = 'sell';
+
+    const ISTHEWEB_RELEASE = 'release';
+
+    const ISTHEWEB_RETURN = 'return';
+
+    /**
+     * @var string The database table used by the model.
+     */
+    public $table = 'istheweb_shop_inventory_units';
 
     /**
      * @var array Implements bevaviors
@@ -26,23 +51,10 @@ class InventoryUnit extends Model
         'Istheweb.Shop.Behaviors.InventoryModel'
     ];
 
-    /**
-     * @var mixed
-     */
-    protected $id;
+    public $morphTo = [
+        'stockable' => []
+    ];
 
-    /**
-     * @var StockableInterface
-     */
-    protected $stockable;
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * {@inheritdoc}
@@ -71,9 +83,9 @@ class InventoryUnit extends Model
     /**
      * {@inheritdoc}
      */
-    public function getInventoryState()
+    public function getState()
     {
-        return $this->inventoryState;
+        return $this->state;
     }
 
     /**
@@ -81,7 +93,7 @@ class InventoryUnit extends Model
      */
     public function setInventoryState($state)
     {
-        $this->inventoryState = $state;
+        $this->state = $state;
     }
 
     /**

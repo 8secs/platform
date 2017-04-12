@@ -18,6 +18,7 @@ use Istheweb\Shop\Models\ShopSettings;
 use Istheweb\Shop\Models\TaxRate;
 use PayPal\Api\Tax;
 use System\Classes\ModelBehavior;
+use Request;
 
 /**
  * Class OrderModel
@@ -132,9 +133,14 @@ class OrderModel extends ModelBehavior
      */
     public function updateAdjustment($type)
     {
+        $id = $this->model->id;
+        if(is_null($id)){
+            $id = Request::segment(6);
+            $this->model = Order::find($id);
+        }
         if($type == TaxRate::TAX_TYPE){
             self::deleteAdjustments();
-            $order_items = OrderItem::where('order_id', $this->model->id)->get();
+            $order_items = OrderItem::where('order_id', $id)->get();
             foreach($order_items as $item){
                 $adjustment = Adjustment::findByTaxOrderable($item)
                     ->first();
@@ -186,6 +192,9 @@ class OrderModel extends ModelBehavior
         if(!is_null($shipment)){
             $id = $shipment->shipping_method_id;
             $method = ShippingMethod::find($id);
+        }else{
+            $shipment = Shipment::where('order_id', $this->model->id)->first();
+            $method = ShippingMethod::find($shipment->shipping_method_id);
         }
         return $method;
     }
