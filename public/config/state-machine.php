@@ -1,51 +1,42 @@
 <?php
 
 return [
-    'inventoryState' => [
+    'istheweb_inventory_unit' => [
         // class of your domain object
         'class' => Istheweb\Shop\Models\InventoryUnit::class,
 
         // name of the graph (default is "default")
-        'graph' => 'inventoryState',
+        'graph' => \Istheweb\Shop\Models\InventoryUnit::GRAPH,
 
         // property of your object holding the actual state (default is "state")
         'property_path' => 'state',
 
         // list of all possible states
         'states' => [
-            'new',
-            'pending_review',
-            'awaiting_changes',
-            'accepted',
-            'published',
-            'rejected',
+            \Istheweb\Shop\Models\InventoryUnit::STATE_CHECKOUT,
+            \Istheweb\Shop\Models\InventoryUnit::STATE_ONHOLD,
+            \Istheweb\Shop\Models\InventoryUnit::STATE_SOLD,
+            \Istheweb\Shop\Models\InventoryUnit::STATE_BACKORDERED,
+            \Istheweb\Shop\Models\InventoryUnit::STATE_RETURNED
         ],
 
         // list of all possible transitions
         'transitions' => [
-            'create' => [
-                'from' => ['new'],
-                'to' => 'pending_review',
+            'hold' => [
+                'from' => ['checkout'],
+                'to' => 'onhold',
             ],
-            'ask_for_changes' => [
-                'from' =>  ['pending_review', 'accepted'],
-                'to' => 'awaiting_changes',
+            'sell' => [
+                'from' =>  ['onhold'],
+                'to' => 'sold',
             ],
-            'cancel_changes' => [
-                'from' => ['awaiting_changes'],
-                'to' => 'pending_review',
+            'release' => [
+                'from' => ['onhold'],
+                'to' => 'checkout',
             ],
-            'submit_changes' => [
-                'from' => ['awaiting_changes'],
-                'to' =>  'pending_review',
-            ],
-            'approve' => [
-                'from' => ['pending_review', 'rejected'],
-                'to' =>  'accepted',
-            ],
-            'publish' => [
-                'from' => ['accepted'],
-                'to' =>  'published',
+            'return' => [
+                'from' => ['sold'],
+                'to' =>  'checkout',
             ],
         ],
 
@@ -53,13 +44,13 @@ return [
         'callbacks' => [
             // will be called when testing a transition
             'guard' => [
-                'guard_on_submitting' => [
+                'guard_on_hold' => [
                     // call the callback on a specific transition
-                    'on' => 'submit_changes',
+                    //'on' => 'hold',
                     // will call the method of this class
-                    'do' => ['MyClass', 'handle'],
+                    //'do' => ['MyClass', 'handle'],
                     // arguments for the callback
-                    'args' => ['object'],
+                    //'args' => ['object'],
                 ],
             ],
 

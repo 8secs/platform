@@ -8,3 +8,6 @@
 /public/plugins/istheweb/ispdf/vendor/
 /bbdd/
 /public/storage/framework/cache/
+/public/platform_06-04-2017.sql
+/public/platform_14-04-2017.sql
+/public/platform_bbdd.sql
