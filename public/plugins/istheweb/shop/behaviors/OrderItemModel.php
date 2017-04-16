@@ -47,7 +47,7 @@ class OrderItemModel extends ModelBehavior
 
         if($item->isTracked()){
             /**
-             * TODO: It does not work actually
+             * TODO: It does not work
              */
             if($availabilityChecker->isStockSufficient($item, $quantity)){
                 $inventoryUnit = new InventoryUnit();

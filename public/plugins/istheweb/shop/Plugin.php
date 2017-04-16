@@ -1,20 +1,15 @@
 <?php namespace Istheweb\Shop;
 
-use Backend;
-use BackendMenu;
-use Backend\Facades\BackendAuth;
 use App;
+use Backend\Facades\BackendAuth;
+use BackendMenu;
 use Config;
 use Event;
+use Backend;
 use Illuminate\Foundation\AliasLoader;
 use Istheweb\Shop\Models\Category as ProductCategory;
-use System\Classes\PluginBase;
-use RainLab\User\Models\User as UserModel;
-use RainLab\User\Controllers\Users as UserController;
-use RainLab\Location\Models\Country;
-use RainLab\Location\Models\State;
-use Istheweb\Shop\Models\Address;
 use Istheweb\Shop\Models\Customer;
+use System\Classes\PluginBase;
 
 /**
  * Shop Plugin Information File

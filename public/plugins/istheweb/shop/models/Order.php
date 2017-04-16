@@ -10,6 +10,16 @@ class Order extends Model
 {
     use Validation;
 
+    const STATE_NEW = 'new';
+    const STATE_CART = 'cart';
+    const STATE_CART_LOCKED = 'cart_locked';
+    const STATE_PENDING = 'pending';
+    const STATE_CONFIRMED = 'confirmed';
+    const STATE_SHIPPED = 'shipped';
+    const STATE_ABANDONED = 'abandoned';
+    const STATE_CANCELLED = 'cancelled';
+    const STATE_RETURNED = 'returned';
+
     /**
      * @var string The database table used by the model.
      */
@@ -45,7 +55,7 @@ class Order extends Model
     ];
 
     public $belongsTo = [
-        'order_status'      => 'Istheweb\Shop\Models\OrderStatus',
+        //'order_status'      => 'Istheweb\Shop\Models\OrderStatus',
         'customer'          => ['Istheweb\Shop\Models\Customer'],
         'shipping_address'  => ['Istheweb\Shop\Models\Address'],
         'billing_address'   => ['Istheweb\Shop\Models\Address'],

@@ -9340,3 +9340,9 @@ Stack trace:
 #15 /var/www/public/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #16 /var/www/public/index.php(44): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #17 {main}  
+[2017-04-16 18:10:04] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Istheweb\Shop\Backend' not found' in /var/www/public/plugins/istheweb/shop/Plugin.php:41
+Stack trace:
+#0 {main}  
+[2017-04-16 18:10:04] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Istheweb\Shop\Backend' not found' in /var/www/public/plugins/istheweb/shop/Plugin.php:41
+Stack trace:
+#0 {main}  

@@ -11,7 +11,7 @@ class CreateOrdersTable extends Migration
         Schema::create('istheweb_shop_orders', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('order_status_id')->unsigned();
+            //$table->integer('order_status_id')->unsigned();
             $table->integer('customer_id')->unsigned();
             $table->integer('shipping_address_id')->unsigned();
             $table->integer('billing_address_id')->unsigned();

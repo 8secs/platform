@@ -34,21 +34,21 @@ secondaryTabs:
           span: auto
           tab: istheweb.shop::lang.customer.label
 
-      order_status_section:
-          label: istheweb.shop::lang.order_status.label
-          span: auto
-          type: section
-          tab: istheweb.shop::lang.tabs.order_details
+      #order_status_section:
+      #    label: istheweb.shop::lang.order_status.label
+      #    span: auto
+      #    type: section
+      #    tab: istheweb.shop::lang.tabs.order_details
       payment_section_section:
           label: istheweb.shop::lang.tabs.payment_method
           span: auto
           type: section
           tab: istheweb.shop::lang.tabs.order_details
-      order_status:
-          type: relation
-          nameFrom: name
-          span: auto
-          tab: istheweb.shop::lang.tabs.order_details
+      #order_status:
+      #    type: relation
+      #    nameFrom: name
+      #    span: auto
+      #    tab: istheweb.shop::lang.tabs.order_details
       payment_method:
           type: dropdown
           span: auto
