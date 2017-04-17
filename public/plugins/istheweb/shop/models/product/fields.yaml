@@ -53,6 +53,12 @@ secondaryTabs:
     enabled:
         label: istheweb.shop::lang.labels.enabled
         type: switch
+        span: auto
+        tab: istheweb.shop::lang.labels.general_info
+    channel:
+        label: istheweb.shop::lang.channel.label
+        type: switch
+        span: auto
         tab: istheweb.shop::lang.labels.general_info
     caption:
         type: richeditor

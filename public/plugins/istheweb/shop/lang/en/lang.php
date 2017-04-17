@@ -137,6 +137,8 @@ return [
         'weight'                        => 'Weight',
         'volume'                        => 'Volume',
         'properties'                    => 'Properties',
+        'color'                         => 'Color',
+        'hostname'                      => 'Hostname',
     ],
     'labels'       => [
         'name'                          => 'Name',
@@ -528,6 +530,23 @@ return [
         'return_to_list'          => 'Return to Order Items',
         'delete_confirm'          => 'Do you really want to delete this Order Item?',
         'delete_selected_success' => 'Successfully deleted the selected Order Items.',
+        'delete_selected_empty'   => 'There are no selected :name to delete.',
+    ],
+    'channel'      => [
+        'new'           => 'New Channel',
+        'label'         => 'Channel',
+        'create_title'  => 'Create Channel',
+        'update_title'  => 'Edit Channel',
+        'preview_title' => 'Preview Channel',
+        'list_title'    => 'Manage Channel',
+        'description'   => 'Channel List'
+    ],
+    'channels'     => [
+        'delete_selected_confirm' => 'Delete the selected channels?',
+        'menu_label'              => 'Channels',
+        'return_to_list'          => 'Return to channels',
+        'delete_confirm'          => 'Do you really want to delete this channel?',
+        'delete_selected_success' => 'Successfully deleted the selected channels.',
         'delete_selected_empty'   => 'There are no selected :name to delete.',
     ]
 ];

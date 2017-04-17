@@ -41,8 +41,8 @@ secondaryTabs:
       #    tab: istheweb.shop::lang.tabs.order_details
       payment_section_section:
           label: istheweb.shop::lang.tabs.payment_method
-          span: auto
           type: section
+          #span: auto
           tab: istheweb.shop::lang.tabs.order_details
       #order_status:
       #    type: relation
@@ -51,7 +51,7 @@ secondaryTabs:
       #    tab: istheweb.shop::lang.tabs.order_details
       payment_method:
           type: dropdown
-          span: auto
+          #span: auto
           tab: istheweb.shop::lang.tabs.order_details
       variants_section:
           label: istheweb.shop::lang.order_items.menu_label

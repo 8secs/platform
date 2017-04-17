@@ -136,6 +136,8 @@ return [
         'weight'                        => 'Peso',
         'volume'                        => 'Volumen',
         'properties'                    => 'Propiedades',
+        'color'                         => 'Color',
+        'hostname'                      => 'Nombre de host',
 
     ],
     'labels'       => [
@@ -530,6 +532,23 @@ return [
         'return_to_list'          => 'Volver a elementos pedido',
         'delete_confirm'          => 'Quieres eliminar este elemento pedido?',
         'delete_selected_success' => 'Se han eliminado los elementos pedido seleccionados.',
+        'delete_selected_empty'   => 'No hay seleccionado :name para eliminar.',
+    ],
+    'channel'      => [
+        'new'           => 'Nuevo canal',
+        'label'         => 'Canal',
+        'create_title'  => 'Crear canal',
+        'update_title'  => 'Editar canal',
+        'preview_title' => 'Ver canal',
+        'list_title'    => 'Gestionar canal',
+        'description'   => 'Listados de canales'
+    ],
+    'channels'     => [
+        'delete_selected_confirm' => 'Eliminar canales seleccionados?',
+        'menu_label'              => 'Canales',
+        'return_to_list'          => 'Volver a canales',
+        'delete_confirm'          => 'Quieres eliminar este canal?',
+        'delete_selected_success' => 'Se han eliminado los canales seleccionados.',
         'delete_selected_empty'   => 'No hay seleccionado :name para eliminar.',
     ]
 ];

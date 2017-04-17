@@ -134,6 +134,14 @@ class Plugin extends PluginBase
                         'group'       => 'istheweb.shop::lang.sidebar.localization',
                         'description' => 'istheweb.shop::lang.tax_category.description',
                     ],
+                    'channels'     => [
+                        'label'       => 'istheweb.shop::lang.channels.menu_label',
+                        'icon'        => 'icon-plug',
+                        'url'         => Backend::url('istheweb/shop/channels'),
+                        'permissions' => ['istheweb.shop.access_channels'],
+                        'group'       => 'istheweb.shop::lang.sidebar.localization',
+                        'description' => 'istheweb.shop::lang.channel.description',
+                    ],
                     'shippingcategories'     => [
                         'label'       => 'istheweb.shop::lang.shipping_categories.menu_label',
                         'icon'        => 'icon-archive',
@@ -229,6 +237,10 @@ class Plugin extends PluginBase
             ],
             'istheweb.shop.access_order_statuses'     => [
                 'label' => 'istheweb.shop::lang.order_status.list_title',
+                'tab'   => 'istheweb.shop::lang.plugin.name',
+            ],
+            'istheweb.shop.access_channels'     => [
+                'label' => 'istheweb.shop::lang.channel.list_title',
                 'tab'   => 'istheweb.shop::lang.plugin.name',
             ]
         ];

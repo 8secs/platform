@@ -14,6 +14,7 @@ class CreateProductsTable extends Migration
             $table->string('code')->unique();
             $table->string('name', 255)->index();
             $table->string('slug', 255)->index()->unique();
+            $table->integer('channel_id')->unsigned()->nullable();
             $table->integer('tax_category_id')->unsigned()->nullable();
             $table->integer('shipping_category_id')->unsigned()->nullable();
             $table->integer('product_type')->default(1);

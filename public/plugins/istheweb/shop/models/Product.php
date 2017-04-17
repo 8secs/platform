@@ -33,6 +33,7 @@ class Product extends Base implements StockableInterface, ShippableInterface
         'variants'                  => 'Istheweb\Shop\Models\Variant'
     ];
     public $belongsTo = [
+        'channel'               => 'Istheweb\Shop\Models\Channel',
         'tax_category'          => 'Istheweb\Shop\Models\TaxCategory',
         'shipping_category'     => 'Istheweb\Shop\Models\ShippingCategory',
     ];

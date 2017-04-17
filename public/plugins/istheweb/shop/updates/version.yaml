@@ -6,6 +6,7 @@
   - create_attribute_values_table.php
   - create_attributes_table.php
   - create_categories_table.php
+  - create_channels_table.php
   - create_currencies_table.php
   - create_inventory_units_table.php
   - create_customers_table.php
