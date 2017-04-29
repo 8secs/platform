@@ -1,14 +1,20 @@
 <?php namespace Istheweb\Shop\Models;
 
+use istheweb\shop\classes\OrderCheckoutTransitions;
 use Model;
+use Request;
+use October\Rain\Database\Traits\Purgeable;
+use RainLab\Translate\Classes\Translator;
 use October\Rain\Database\Traits\Validation;
+use StateMachine;
+
 
 /**
  * Order Model
  */
 class Order extends Model
 {
-    use Validation;
+    use Validation, Purgeable;
 
     const STATE_NEW = 'new';
     const STATE_CART = 'cart';
@@ -30,6 +36,10 @@ class Order extends Model
      */
     public $implement = [
         'Istheweb.Shop.Behaviors.OrderModel'
+    ];
+
+    public $purgeable = [
+        'currencies'
     ];
 
     /**
@@ -56,6 +66,7 @@ class Order extends Model
 
     public $belongsTo = [
         //'order_status'      => 'Istheweb\Shop\Models\OrderStatus',
+        'channel'           => ['Istheweb\Shop\Models\Channel'],
         'customer'          => ['Istheweb\Shop\Models\Customer'],
         'shipping_address'  => ['Istheweb\Shop\Models\Address'],
         'billing_address'   => ['Istheweb\Shop\Models\Address'],
@@ -75,9 +86,40 @@ class Order extends Model
         return $payment_methods;
     }
 
+    public function getCurrenciesOptions()
+    {
+        $currencies = Currency::active()->lists('name', 'id');;
+        return $currencies;
+    }
+
+    public function beforeCreate()
+    {
+        $order = post('Order');
+
+        $this->reference = self::formatReference();
+        $this->customer_ip = Request::getClientIp();
+        $translator = Translator::instance();
+        $this->locale_code = $translator->getLocale();
+
+        $currency = Currency::find($order['currencies']);
+        if(!is_null($currency)){
+            $this->currency_code = $currency->iso_code;
+        }
+    }
+
     public function beforeSave()
     {
-        $this->reference = $this->reference ?: self::formatReference();
+
+    }
+
+    public function afterCreate()
+    {
+        $order = Order::find($this->id);
+        $stateMachine = StateMachine::get($order, OrderCheckoutTransitions::GRAPH);
+
+        if($stateMachine->can(OrderCheckoutTransitions::TRANSITION_ADDRESS)){
+            $stateMachine->apply(OrderCheckoutTransitions::TRANSITION_ADDRESS);
+        }
     }
 
     public function scopeLastReference($query){

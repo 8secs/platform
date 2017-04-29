@@ -36,25 +36,4 @@ class OrderController extends BaseController
     {
         return trans('istheweb.shop::lang.order.delete_selected_empty');
     }
-
-    public function onRelationManageCreate()
-    {
-        /*
-        $relation_field = post('_relation_field');
-        if($relation_field == 'order_items' || $relation_field == 'shipment'){
-            return Redirect::refresh();
-        }
-        */
-
-    }
-
-    public function onRelationManageUpdate(){
-        /*
-        $relation_field = post('_relation_field');
-        if($relation_field == 'order_items' || $relation_field == 'shipment'){
-            return Redirect::refresh();
-        }
-        */
-    }
-
 }

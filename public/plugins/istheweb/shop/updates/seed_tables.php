@@ -17,6 +17,7 @@ use Istheweb\Shop\Models\Address;
 use Istheweb\Shop\Models\Attribute;
 use Istheweb\Shop\Models\AttributeValue;
 use Istheweb\Shop\Models\Category;
+use Istheweb\Shop\Models\Channel;
 use Istheweb\Shop\Models\Currency;
 use Istheweb\Shop\Models\Customer;
 use Istheweb\Shop\Models\Option;
@@ -358,6 +359,20 @@ class SeedTables extends Seeder
             'position' => 1,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
+        ]);
+
+        $es_channel = Channel::create([
+            'default_locale_id' => 2,
+            'base_currency_id' => 1,
+            'tax_zone_id' => 1,
+            'code' => 'ES_WEB',
+            'name' => 'Tienda Online España',
+            'color' => '#C0392B',
+            'description' => '<p>Canal para la tienda de España</p>',
+            'enabled' => 1,
+            'hostname' => 'https://istheweb.com/es',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
 
         $products = [

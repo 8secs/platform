@@ -15,67 +15,114 @@ return [
             ],
 
             // The namespace to set the configuration under. For this example, this package accesses it's config via config('purifier.' . $key), so the namespace 'purifier' is what we put here
-            'config_namespace' => 'purifier',
+            'config_namespace' => 'state-machine',
 
             // The configuration file for the package itself. Start this out by copying the default one that comes with the package and then modifying what you need.
             'config' => [
-                'istheweb_inventory_unit' => [
-                    // class of your domain object
-                    'class' => Istheweb\Shop\Models\InventoryUnit::class,
-
-                    // name of the graph (default is "default")
-                    'graph' => \Istheweb\Shop\Models\InventoryUnit::GRAPH,
-
-                    // property of your object holding the actual state (default is "state")
-                    'property_path' => 'state',
-
-                    // list of all possible states
+                'istheweb_order_checkout' => [
+                    'class' => Istheweb\Shop\Models\Order::class,
+                    'graph' => 'istheweb_order_checkout',
+                    'property_path' => 'checkout_state',
                     'states' => [
-                        \Istheweb\Shop\Models\InventoryUnit::STATE_CHECKOUT,
-                        \Istheweb\Shop\Models\InventoryUnit::STATE_ONHOLD,
-                        \Istheweb\Shop\Models\InventoryUnit::STATE_SOLD,
-                        \Istheweb\Shop\Models\InventoryUnit::STATE_BACKORDERED,
-                        \Istheweb\Shop\Models\InventoryUnit::STATE_RETURNED
+                        'cart',
+                        'addressed',
+                        'shipping_selected',
+                        'payment_selected',
+                        'completed',
+                    ],
+                    'transitions' => [
+                        'address' => [
+                            'from' => ['cart', 'addressed', 'shipping_selected', 'payment_selected'],
+                            'to' => 'addressed',
+                        ],
+                        'select_shipping' => [
+                            'from' => ['addressed', 'shipping_selected', 'payment_selected'],
+                            'to' => 'shipping_selected',
+                        ],
+                        'select_payment' => [
+                            'from' => ['payment_selected', 'shipping_selected'],
+                            'to' => 'payment_selected',
+                        ],
+                        'complete' => [
+                            'from' => ['payment_selected'],
+                            'to' => 'completed',
+                        ],
+                    ],
+                    'callbacks' => [
+                        'after' => [
+                            'istheweb_process_cart'  => [
+                                'on'=> ["address", "select_shipping", "select_payment"],
+                                'do' => [Istheweb\Shop\models\Order::class, "process"],
+                                'args' => ["object"]
+                            ],
+                        ],
+                    ],
+                ],
+                'istheweb_order' => [
+                    'class' => Istheweb\Shop\Models\Order::class,
+                    'graph' => 'istheweb_order',
+                    'property_path' => 'state',
+                    'states' => [
+                        'cart',
+                        'new',
+                        'cancelled',
+                        'confirmed'
+                    ],
+                    'transitions' => [
+                        'create' => [
+                            'from' => ['cart'],
+                            'to' => 'new',
+                        ],
+                        'cancel' => [
+                            'from' => ['new'],
+                            'to' => 'cancelled',
+                        ],
+                        'confirm' => [
+                            'from' => ['new'],
+                            'to' => 'confirmed',
+                        ],
+                        'return' => [
+                            'from' => ['confirmed'],
+                            'to' => 'new',
+                        ],
                     ],
 
-                    // list of all possible transitions
+                    'callbacks' => [
+                        'before' => [],
+                        'after' => [],
+                    ],
+                ],
+                'istheweb_inventory_unit' => [
+                    'class' => Istheweb\Shop\Models\InventoryUnit::class,
+                    'graph' => 'istheweb_inventory_unit',
+                    'property_path' => 'state',
+                    'states' => [
+                        'checkout',
+                        'onhold',
+                        'sold',
+                        'backordered',
+                        'returned'
+                    ],
                     'transitions' => [
                         'hold' => [
                             'from' => ['checkout'],
                             'to' => 'onhold',
                         ],
                         'sell' => [
-                            'from' =>  ['onhold'],
+                            'from' => ['onhold'],
                             'to' => 'sold',
                         ],
                         'release' => [
-                            'from' => ['sold'],
-                            'to' => 'release',
+                            'from' => ['onhold'],
+                            'to' => 'checkout',
                         ],
                         'return' => [
                             'from' => ['sold'],
-                            'to' =>  'checkout',
+                            'to' => 'checkout',
                         ],
                     ],
-
-                    // list of all callbacks
                     'callbacks' => [
-                        // will be called when testing a transition
-                        'guard' => [
-                            'guard_on_submitting' => [
-                                // call the callback on a specific transition
-                                'on' => 'submit_changes',
-                                // will call the method of this class
-                                'do' => ['MyClass', 'handle'],
-                                // arguments for the callback
-                                'args' => ['object'],
-                            ],
-                        ],
-
-                        // will be called before applying a transition
                         'before' => [],
-
-                        // will be called after applying a transition
                         'after' => [],
                     ],
                 ],

@@ -488,6 +488,7 @@ return [
         'list_title'    => 'Gestionar pedido',
         'description'   => 'Listados de pedidos',
         'update_order'  => 'El pedido se ha actualizado correctamente',
+        'select_payment_method' => 'Selecciona método pago',
     ],
     'orders'     => [
         'delete_selected_confirm' => 'Eliminar pedidos seleccionados?',

@@ -9,31 +9,42 @@
 
 <?php if (!$this->fatalError): ?>
 
-<?= Form::open(['class' => 'layout']) ?>
+<?php Block::put('form-contents') ?>
 
-<div class="layout-row">
-    <?= $this->formRender() ?>
-</div>
+<div class="layout">
+    <div class="layout-row">
+        <?= $this->formRenderOutsideFields() ?>
+        <?= $this->formRenderPrimaryTabs() ?>
+    </div>
 
-<div class="form-buttons">
-    <div class="loading-indicator-container">
-        <button
-                type="submit"
-                data-request="onSave"
-                data-hotkey="ctrl+s, cmd+s"
-                data-load-indicator="<?= e(trans('backend::lang.form.creating_name', ['name'=>$formRecordName])) ?>"
-                class="btn btn-primary">
-            <?= e(trans('backend::lang.form.create')) ?>
-        </button>
+    <div class="form-buttons">
+        <div class="loading-indicator-container">
+            <button
+                    type="submit"
+                    data-request="onSave"
+                    data-hotkey="ctrl+s, cmd+s"
+                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+                    class="btn btn-primary">
+                <?= e(trans('backend::lang.form.create')) ?>
+            </button>
 
-        <span class="btn-text">
-                    <?= e(trans('backend::lang.form.or')) ?> <a
-                href="<?= Backend::url('istheweb/shop/orders') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
-                </span>
+            <span class="btn-text">
+                <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('istheweb/shop/orders') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+            </span>
+        </div>
     </div>
 </div>
+<?php Block::endPut() ?>
 
-<?= Form::close() ?>
+<?php Block::put('form-sidebar') ?>
+    <div class="hide-tabs"><?= $this->formRenderSecondaryTabs() ?></div>
+<?php Block::endPut() ?>
+
+<?php Block::put('body') ?>
+    <?= Form::open(['class'=>'layout stretch']) ?>
+    <?= $this->makeLayout('form-with-sidebar') ?>
+    <?= Form::close() ?>
+<?php Block::endPut() ?>
 
 <?php else: ?>
 

@@ -487,6 +487,7 @@ return [
         'list_title'    => 'Manage Order',
         'description'   => 'Order List',
         'update_order'  => 'The order has been updated',
+        'select_payment_method' => 'Select payment method',
     ],
     'orders'     => [
         'delete_selected_confirm' => 'Delete the selected orders?',

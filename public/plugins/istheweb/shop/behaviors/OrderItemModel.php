@@ -61,6 +61,7 @@ class OrderItemModel extends ModelBehavior
         $this->model->unit_price = $item->price;
         $this->model->unit_total = $item->price * $quantity;
         $this->model->total = $this->model->unit_total;
+
     }
 
     /**
@@ -71,6 +72,7 @@ class OrderItemModel extends ModelBehavior
     public function checkAdjustement()
     {
         $adjustment = Adjustment::findByTaxOrderable($this->model)->first();
+
 
         if(is_null($adjustment)){
             $this->addAdjustment();

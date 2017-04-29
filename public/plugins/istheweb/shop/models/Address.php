@@ -61,6 +61,16 @@ class Address extends Base
         }
     }
 
+    public function afterCreate()
+    {
+        dd(dump(post()));
+    }
+
+    public function afterUpdate()
+    {
+        dd(dump(post()));
+    }
+
 
     public function getCountryOptions(){
         return Country::where('is_enabled', 1)->lists('name', 'id', 'code');

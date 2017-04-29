@@ -143,7 +143,7 @@ class Shipment extends Model
     }
 
     /**
-     *
+     * @param $is_order
      */
     public function updateShipmentItems($is_order = false)
     {
@@ -202,6 +202,7 @@ class Shipment extends Model
 
     /**
      * @param $order
+     * @param $is_cat
      * @return array
      */
     protected function getProductables($order, $is_cat = false)
@@ -227,6 +228,7 @@ class Shipment extends Model
 
     /**
      * @param $id
+     * @param $type
      */
     protected function addShippingItem($id, $type)
     {

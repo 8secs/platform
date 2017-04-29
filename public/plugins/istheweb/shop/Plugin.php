@@ -326,10 +326,10 @@ class Plugin extends PluginBase
     public function register()
     {
         // Register ServiceProviders
-        App::register('Sebdesign\SM\ServiceProvider');
+        //App::register('Sebdesign\SM\ServiceProvider');
         // Register aliases
         $alias = AliasLoader::getInstance();
-        $alias->alias('StateMachine', 'Sebdesign\SM\Facade');
+        //$alias->alias('StateMachine', 'Sebdesign\SM\Facade');
 
         BackendMenu::registerContextSidenavPartial('Istheweb.Shop', 'shop', 'plugins/istheweb/shop/partials/_sidebar.htm');
         set_exception_handler([$this, 'handleException']);
@@ -398,9 +398,7 @@ class Plugin extends PluginBase
     public function evalProductableOrderItemListColumn($value, $column, $record)
     {
         $type = $record->productable_type;
-
         $instance = $type::find($value);
-        //dd($column);
         return strtoupper($instance->name);
     }
 

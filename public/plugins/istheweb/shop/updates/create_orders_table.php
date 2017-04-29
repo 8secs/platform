@@ -13,6 +13,7 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             //$table->integer('order_status_id')->unsigned();
             $table->integer('customer_id')->unsigned();
+            $table->integer('channel_id')->unsigned();
             $table->integer('shipping_address_id')->unsigned();
             $table->integer('billing_address_id')->unsigned();
             $table->string('reference', 255)->unique();
@@ -22,13 +23,14 @@ class CreateOrdersTable extends Migration
             $table->decimal('subtotal', 15, 2)->nullable();
             $table->decimal('total', 15, 2)->nullable();
             $table->integer('adjustments_total')->nullable();
-            $table->string('state', 255)->nullable();
-            $table->string('checkout_state', 255)->nullable();
+            $table->string('state', 255)->default('cart');
+            $table->string('checkout_state', 255)->default('cart');
             $table->string('payment_state', 255)->nullable();
             $table->string('shipping_state', 255)->nullable();
             $table->string('currency_code', 3)->nullable();
             $table->string('locale_code', 255)->nullable();
             $table->string('customer_ip', 255)->nullable();
+            $table->string('token_value', 255)->nullable();
             $table->string('comments', 1000)->nullable();
 
             $table->timestamps();

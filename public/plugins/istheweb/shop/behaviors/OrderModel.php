@@ -9,6 +9,7 @@
 namespace istheweb\shop\behaviors;
 
 
+use istheweb\shop\classes\OrderCheckoutTransitions;
 use Istheweb\Shop\Models\Adjustment;
 use Istheweb\Shop\Models\Order;
 use Istheweb\Shop\Models\OrderItem;
@@ -19,6 +20,7 @@ use Istheweb\Shop\Models\TaxRate;
 use PayPal\Api\Tax;
 use System\Classes\ModelBehavior;
 use Request;
+use StateMachine;
 
 /**
  * Class OrderModel
@@ -29,6 +31,11 @@ class OrderModel extends ModelBehavior
     public function __construct($model)
     {
         parent::__construct($model);
+    }
+
+    public function process(Order $order)
+    {
+        $order->save();
     }
 
     /**
@@ -61,15 +68,22 @@ class OrderModel extends ModelBehavior
         }
 
         $this->model->subtotal = $base;
-        //$this->model->adjustments_total = $this->calculateAdjustments();
         $taxes = Adjustment::sumAdjustment($this->model, TaxRate::TAX_TYPE);
         $this->model->tax = self::formatAdjustemnt($taxes);
         if($this->model->hasShipment()){
             $shipping = Adjustment::sumAdjustment($this->model, Shipment::SHIPMENT_TYPE);
             $this->model->shipping = self::formatAdjustemnt($shipping);
+
+            $state_machine = StateMachine::get($this->model, OrderCheckoutTransitions::GRAPH);
+            if($state_machine->can(OrderCheckoutTransitions::TRANSITION_SELECT_SHIPPING)){
+                $state_machine->apply(OrderCheckoutTransitions::TRANSITION_SELECT_SHIPPING);
+            }
+            $this->model->adjustments_total = $taxes + $shipping;
+            $this->model->total = $this->model->subtotal + $this->model->tax + $this->model->shipping;
+        }else{
+            $this->model->adjustments_total = $taxes;
+            $this->model->total = $this->model->subtotal + $this->model->tax;
         }
-        $this->model->adjustments_total = $taxes + $shipping;
-        $this->model->total = $this->model->subtotal + $this->model->tax + $this->model->shipping;
         $this->model->save();
     }
 
@@ -79,16 +93,18 @@ class OrderModel extends ModelBehavior
     public function checkAdjustments()
     {
         $shipment_adjust = Adjustment::findByShipping($this->model)->first();
-        //dd(dump($shipment_adjust));
         if(is_null($shipment_adjust)){
             self::addAdjustment();
         }else{
             $shipment = Shipment::shipmentWithItems($this->model);
-            if($shipment->shipping_items->count() != $this->model->order_items->count()){
-                $shipment->updateShipmentItems(true);
+            if(!is_null($shipment)){
+
+                if($shipment->shipping_items->count() != $this->model->order_items->count()){
+                    $shipment->updateShipmentItems(true);
+                }
+                $shipment_adjust->amount = $shipment->calculateShipment();
+                $shipment_adjust->save();
             }
-            $shipment_adjust->amount = $shipment->calculateShipment();
-            $shipment_adjust->save();
         }
         self::updateTotals();
     }
@@ -194,7 +210,9 @@ class OrderModel extends ModelBehavior
             $method = ShippingMethod::find($id);
         }else{
             $shipment = Shipment::where('order_id', $this->model->id)->first();
-            $method = ShippingMethod::find($shipment->shipping_method_id);
+            if(!is_null($shipment)){
+                $method = ShippingMethod::find($shipment->shipping_method_id);
+            }
         }
         return $method;
     }

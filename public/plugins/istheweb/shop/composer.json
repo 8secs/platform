@@ -20,6 +20,7 @@
     "sylius/channel": "^0.19.0",
     "sylius/inventory": "^0.19.0",
     "sylius/shipping": "^0.19.0",
-    "sylius/order": "^0.19.0"
+    "sylius/order": "^0.19.0",
+    "sylius/promotion": "^0.19.0"
   }
 }

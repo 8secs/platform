@@ -1,0 +1,31 @@
+Targets
+    Occurrences of '$stateMachine' in Directory /home/andres/Documentos/IsTheWeb/proyecto/sylius/vendor/sylius/sylius/src/Sylius/Component
+Found Occurrences  (55 usages found)
+    Unclassified occurrence  (53 usages found)
+        sylius  (53 usages found)
+            /home/andres/Documentos/IsTheWeb/proyecto/sylius/vendor/sylius/sylius/src/Sylius/Component/Core/StateResolver  (11 usages found)
+                OrderPaymentStateResolver.php  (5 usages found)
+                    46$stateMachine = $this->stateMachineFactory->get($order, OrderPaymentTransitions::GRAPH);
+                    50$this->applyTransition($stateMachine, $targetTransition);
+                    58private function applyTransition(StateMachineInterface $stateMachine, $transition)
+                    60if ($stateMachine->can($transition)) {
+                    61$stateMachine->apply($transition);
+                OrderShippingStateResolver.php  (3 usages found)
+                    51$stateMachine = $this->stateMachineFactory->get($order, OrderShippingTransitions::GRAPH);
+                    54$stateMachine->apply(OrderShippingTransitions::TRANSITION_SHIP);
+                    58$stateMachine->apply(OrderShippingTransitions::TRANSITION_PARTIALLY_SHIP);
+                OrderStateResolver.php  (3 usages found)
+                    44$stateMachine = $this->stateMachineFactory->get($order, OrderTransitions::GRAPH);
+                    46if ($this->canOrderBeFulfilled($order) && $stateMachine->can(OrderTransitions::TRANSITION_FULFILL)) {
+                    47$stateMachine->apply(OrderTransitions::TRANSITION_FULFILL);
+            /home/andres/Documentos/IsTheWeb/proyecto/sylius/vendor/sylius/sylius/src/Sylius/Component/Order/Updater  (2 usages found)
+                UnpaidOrdersStateUpdater.php  (2 usages found)
+                    67$stateMachine = $this->stateMachineFactory->get($expiredUnpaidOrder, 'sylius_order');
+                    68$stateMachine->apply(OrderTransitions::TRANSITION_CANCEL);
+    Usage in comments  (2 usages found)
+        sylius  (2 usages found)
+            /home/andres/Documentos/IsTheWeb/proyecto/sylius/vendor/sylius/sylius/src/Sylius/Component/Core/StateResolver  (2 usages found)
+                OrderPaymentStateResolver.php  (1 usage found)
+                    55     * @param StateMachineInterface $stateMachine
+                OrderShippingStateResolver.php  (1 usage found)
+                    50/** @var StateMachineInterface $stateMachine */
